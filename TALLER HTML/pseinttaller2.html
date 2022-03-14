@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseinttaller1</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/hojadevida.js"></script>
+  </head>
+  <body class="estilo1" onload="main()">
+    <a href="./pseint.html"
+      ><img
+        src="./imagenes/volver.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+
+    <header>
+      <h1 class="estilo1-h1"><b>PSeInt Taller 2</b></h1>
+    </header>
+
+    <a href="https://github.com/karen1307/tallerGit.git"
+      ><img
+        src="./imagenes/github.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+    <a href="https://youtu.be/ESEVqNPO6r4"
+      ><img
+        src="./imagenes/youtube.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+
+    <h2>Punto 1</h2>
+    <p>
+      Realizar un programa en el cual se solicite la edad de una persona. Si la
+      persona es mayor o igual a 18 años, deberá mostrar en pantalla: Usted es
+      mayor de edad.
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso Edad1
+        Definir edad Como Entero;
+        
+        Escribir "Ingresa tu edad";
+        Leer edad;
+        
+        si edad >= 18 Entonces
+            Escribir "Usted es mayor de edad.";
+        FinSi
+        
+    FinProceso
+    </textarea>
+    <br />
+
+    <h2>Punto 2</h2>
+    <p>
+      Realizar un programa en el cual se solicite la edad de una persona. Si la
+      persona es menor a 18 años, deberá mostrar en pantalla: Usted aún es un
+      niño(a).
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso Edad2
+        Definir edad Como Entero;
+        
+        Escribir "Ingresa tu edad";
+        Leer edad;
+        
+        si edad < 18 Entonces
+            Escribir "Usted aún es un niño(a).";
+        FinSi
+    FinProceso
+    
+    </textarea>
+    <br />
+
+    <h2>Punto 3</h2>
+    <p>
+      Realizar un programa en el cual se solicite el nombre, apellidos y edad de
+      la persona. Si la persona es mayor o igual a 18 años, entonce se deberá
+      imprimir en pantalla [Nombre completo] usted es mayor de edad, por lo
+      tanto puede entrar a la fiesta. Si la edad de la persona es menor que 18
+      años, entonces, deberá imprimirse el siguiente mensaje: [Nombre completo]
+      usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por
+      favor devuélvase a su casa.
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso Edad3
+	
+        Definir nombres Como Caracter;
+        Definir apellidos Como Caracter;
+        Definir edad Como Entero;
+        
+        Escribir "Ingrese tus nombres";
+        Leer nombres;
+        
+        Escribir "Ingresa tus apellidos";
+        Leer apellidos;
+        
+        Escribir "¿Cúal es tu edad";
+        Leer edad;
+        
+        Limpiar Pantalla;
+        
+        si edad >= 18 Entonces
+            Escribir nombres, " ",apellidos, " usted es mayor de edad, por lo tanto puede  entrar a la fiesta";
+        sino
+            Escribir  nombres, " ",apellidos, " usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.";
+        FinSi
+        
+    FinProceso
+
+    </textarea>
+    <br />
+
+    <h2>Punto 4</h2>
+    <p>
+      La video tienda que presta sus servicios de alquiler de películas a los
+      usuarios del barrio el Porvenir, requiere de una aplicación que permita
+      registrar el alquiler de las películas que adquieren sus usuarios. Para
+      cada usuario se debe permitir la opción de alquilar película, consultar
+      películas disponibles y recibir película en la video tienda con la opción
+      de realizar anotaciones sobre estas si se llegan a presentar daños u otra
+      novedad sobre la película.
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso VideoApp
+	
+        Definir nombrecompleto Como Caracter;
+        Definir documento Como Entero;
+        Definir celular Como Entero;
+        Definir opcion1 Como Entero;
+        Definir opcion2 Como Entero;
+        Definir opcion3 Como Entero;
+        Definir anotacion Como Caracter;
+    
+        
+        Escribir "Elije una opción";
+        Escribir "1. Alquilar pelicula.";
+        Escribir "2. Consultar peliculas disponibles.";
+        Escribir "3. Recibir pelicula.";
+        Leer opcion1;
+        
+        Limpiar Pantalla;
+        
+        segun opcion1 Hacer
+            1: 
+                Escribir "Nuestras peliculas disponibles, selecciona la que desees alquilar:";
+                Escribir "1. El origen";
+                Escribir "2. Ghost: la sombre del amor";
+                Escribir "3. El conjuro";
+                Escribir "4. Rápidos y Furiosos 7";
+                Escribir "5. No deseo ninguna";
+                Leer opcion2;
+                
+                Limpiar Pantalla;
+                
+                si opcion2 <= 5 Entonces
+                    si opcion2 <= 4 Entonces
+                        Escribir "Ingresar tu nombre completo.";
+                        Leer nombrecompleto;
+                        Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                        Leer documento;
+                        Escribir "Ingresa tu numero de celular.";
+                        Leer celular;
+                    
+                        Limpiar Pantalla;
+                    
+                        Escribir "Apartir de este momento puedes reclamar la pelicula en nuetra video tienda, recuerda que debes dejar un deposito de $20.000 por si la pelicula presenta algun daño";
+                    SiNo
+                        Escribir " Lametamos no tener la pelicula que desean que tengas un feliz día";
+                    FinSi
+                SiNo
+                    Escribir " La opción elegida no existe";		
+                FinSi
+            2: 
+                Escribir "El origen";
+                Escribir "Ghost: la sombre del amor";
+                Escribir "El conjuro";
+                Escribir "Rápidos y Furiosos 7";
+                
+            3:
+                Escribir "¿La pelicula tiene algun daño o novedad";
+                Escribir "1. si";
+                Escribir "2. no";
+                Leer opcion3;
+                
+                Limpiar Pantalla;
+                
+                Segun opcion3 Hacer
+                    1:
+                        Escribir "Ingresa que novedad presenta";
+                        Leer anotacion;
+                    2:
+                        Escribir "Ingresar pelicula a la lista de disponibles";
+                    De Otro Modo:
+                        Escribir "La opción elegida no existe";
+                FinSegun
+                
+            De Otro Modo:
+                Escribir "La opción elegida no existe";
+                
+                
+    FinSegun
+        
+    
+    FinProceso
+
+    </textarea>
+    <br />
+
+    <h2>Punto 5</h2>
+    <p>
+      La Droguería Mi Salud presta sus servicios en la localidad de Suba y
+      requiere una aplicación para poder facturar los productos que vende a sus
+      clientes y para ello, los productos tienen unas características que deben
+      indicársele al cliente para que pueda escoger el producto a comprar. Para
+      cada cliente, se tienen las opciones de compra de producto, consulta de
+      precios por producto y devoluciones en caso de que se presenten.
+    </p>
+    <textarea name="texto" class="mensaje">
+     Proceso DrogueriaApp
+	
+        Definir nombrecompleto Como Caracter;
+        Definir documento Como Entero;
+        Definir celular Como Entero;
+        Definir direccion Como Caracter;
+        Definir opcion1 Como Entero;
+        Definir opcion2 Como Entero;
+        Definir opcion3 Como Entero;
+        Definir anotacion Como Caracter;
+        
+        Escribir "Elija el medicamento que requiere";
+        Escribir "1. Acetaminofen * 500 mg /100 tabletas ";
+        Escribir "2. Ibuprofeno * 800mg/ 60 tabletas.";
+        Escribir "3. Salbutamol inhalador /frasco * 200 dosis.";
+        Escribir "4. Beclometasona inhalador * 50 mg /frasco * 200 dosis.";
+        Leer opcion1;
+        
+        Limpiar Pantalla;
+        
+        Segun opcion1 Hacer
+            1:
+                Escribir "Acetaminofen * 500 mg /100 tabletas";
+                Escribir "1.Comprar medicamento";
+                Escribir "2.Consultar precio del medicamento";
+                Escribir "3.Devolver el medicamento";
+                Leer opcion2;
+                
+                Limpiar Pantalla;
+                
+                Segun opcion2 Hacer
+                    1:
+                        Escribir "Ingresar tu nombre completo.";
+                        Leer nombrecompleto;
+                        Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                        Leer documento;
+                        Escribir "Ingresa tu numero de celular.";
+                        Leer celular;
+                        Escribir "Ingresa direccion donde llegarian los medicamentos";
+                        Leer direccion;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Pedido realizado, valor a pagar $46.800";
+                    2:
+                        
+                        Escribir "El medicamento tiene un valore de $46.800.";
+                    3:
+                        Escribir "Ingresa el motivo por el cual deseas devolver el medicamento";
+                        Leer anotacion;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Su solicitud ha sido ingresada, recuerde que para la devolucion del medicamento este no debe estar abierto";
+                FinSegun
+            2:
+                
+                Escribir "Ibuprofeno * 800mg/ 60 tabletas.";
+                Escribir "1.Comprar medicamento";
+                Escribir "2.Consultar precio del medicamento";
+                Escribir "3.Devolver el medicamento";
+                Leer opcion2;
+                
+                Limpiar Pantalla;
+                
+                Segun opcion2 Hacer
+                    1:
+                        Escribir "Ingresar tu nombre completo.";
+                        Leer nombrecompleto;
+                        Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                        Leer documento;
+                        Escribir "Ingresa tu numero de celular.";
+                        Leer celular;
+                        Escribir "Ingresa direccion donde llegarian los medicamentos";
+                        Leer direccion;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Pedido realizado, valor a pagar $19.450";
+                    2:
+                        
+                        Escribir "El medicamento tiene un valore de $19.450.";
+                    3:
+                        Escribir "Ingresa el motivo por el cual deseas devolver el medicamento";
+                        Leer anotacion;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Su solicitud ha sido ingresada, recuerde que para la devolucion del medicamento este no debe estar abierto";
+                FinSegun
+                
+            3:
+                Escribir "Salbutamol inhalador /frasco * 200 dosis.";
+                Escribir "1.Comprar medicamento";
+                Escribir "2.Consultar precio del medicamento";
+                Escribir "3.Devolver el medicamento";
+                Leer opcion2;
+                
+                Limpiar Pantalla;
+                
+                Segun opcion2 Hacer
+                    1:
+                        Escribir "Ingresar tu nombre completo.";
+                        Leer nombrecompleto;
+                        Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                        Leer documento;
+                        Escribir "Ingresa tu numero de celular.";
+                        Leer celular;
+                        Escribir "Ingresa direccion donde llegarian los medicamentos";
+                        Leer direccion;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Pedido realizado, valor a pagar $10.150";
+                    2:
+                        
+                        Escribir "El medicamento tiene un valore de $10.150";
+                    3:
+                        Escribir "Ingresa el motivo por el cual deseas devolver el medicamento";
+                        Leer anotacion;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Su solicitud ha sido ingresada, recuerde que para la devolucion del medicamento este no debe estar abierto";
+                FinSegun
+            4:
+                Escribir "Beclometasona inhalador * 50 mg /frasco * 200 dosis.";
+                Escribir "1.Comprar medicamento";
+                Escribir "2.Consultar precio del medicamento";
+                Escribir "3.Devolver el medicamento";
+                Leer opcion2;
+                
+                Limpiar Pantalla;
+                
+                Segun opcion2 Hacer
+                    1:
+                        Escribir "Ingresar tu nombre completo.";
+                        Leer nombrecompleto;
+                        Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                        Leer documento;
+                        Escribir "Ingresa tu numero de celular.";
+                        Leer celular;
+                        Escribir "Ingresa direccion donde llegarian los medicamentos";
+                        Leer direccion;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Pedido realizado, valor a pagar $38.750";
+                    2:
+                        
+                        Escribir "El medicamento tiene un valore de $38.750";
+                    3:
+                        Escribir "Ingresa el motivo por el cual deseas devolver el medicamento";
+                        Leer anotacion;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Su solicitud ha sido ingresada, recuerde que para la devolucion del medicamento este no debe estar abierto";
+                FinSegun
+        FinSegun
+        
+    FinProceso
+    </textarea>
+    <br />
+    <h2>Punto 6</h2>
+    <p>
+      El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje
+      para realizar las respectivas revisiones y requiere una aplicación que le
+      permita registrar los servicios generados a sus clientes. Para cada
+      motocicleta se debe tener registro del ingreso al taller y las
+      observaciones por parte del cliente. También debe existir registro de
+      salida del taller con las novedades y otra de arreglos hechos por el
+      mecánico en caso de que se requiera inventariar cambios repuestos en la
+      motocicleta al entregarla.
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso MotosApp
+	
+        Definir nombredueno Como Caracter;
+        Definir documento Como Entero;
+        Definir celular Como Entero;
+        Definir marca Como Caracter;
+        Definir cilindraje Como Entero;
+        Definir nombremecanico Como caracter;
+        Definir observacionesingreso Como Caracter;
+        Definir observacionesdesalida Como Caracter;
+        Definir opcion1 Como Entero;
+        Definir opcion2 Como Entero;
+        Definir opcion3 Como Entero;
+        Definir bandera1 Como Logico;
+        Definir bandera2 Como Logico;
+        
+        Escribir "Elije una opción";
+        Escribir "1. Ingresar Motoclicleta ";
+        Escribir "2. Ver observacions de ingreso ";
+        Escribir "3. Ver observaciones de salida";
+        Leer opcion1;
+        
+        
+        bandera1<-Falso;
+        bandera2<-Falso;
+        
+        Limpiar Pantalla;
+        
+        Segun opcion1 Hacer
+            1: 
+                
+                Escribir "Ingresar tu nombre completo.";
+                Leer nombredueno;
+                Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                Leer documento;
+                Escribir "Ingresa tu numero de celular.";
+                Leer celular;
+                Escribir "Ingresa marca de la moto";
+                Leer marca;
+                Escribir "Ingresa cilindraje de la moto";
+                Leer cilindraje;
+                Escribir "observacion de ingreso de la moto";
+                Leer observacionesingreso;
+                Escribir  "Nobres del mecanico al cual fue asignada la moto";
+                Leer nombremecanico;
+                bandera1<-Verdadero;
+                
+                Limpiar Pantalla;
+                
+                Escribir "La moto ha sido ingresada";
+                Escribir "Elije una opción";
+                Escribir "1. Ver observacions de ingreso ";
+                Escribir "2 Registrar salida de la moto";
+                Escribir "3. salir de la APP";
+                Leer opcion2;
+                
+                Limpiar Pantalla;
+                
+                Segun opcion2 Hacer
+                    1: 
+                        si bandera1 = Verdadero Entonces
+                            
+                            Escribir "La moto fue asignada al mecanico ", nombremecanico, " y tiene las siguentes observacion por parte del dueño: ", observacionesingreso;
+                        SiNo
+                            
+                            Escribir "No se a ingresado ninguna moto";
+                            
+                            
+                        FinSi
+                    2:
+                        
+                        Escribir  "Nobres del mecanico al cual fue asignada la moto";
+                        Leer nombremecanico;
+                        Escribir "observacion salida de la moto, incluir piesas que se cambiaron";
+                        Leer observacionesdesalida;
+                        bandera2<-Verdadero;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Elije una opción";
+                        Escribir "1. Ver observaciones de salida";
+                        Escribir "2. salir de la APP";
+                        Leer opcion3;
+                        
+                        Segun opcion3 Hacer
+                            1:
+                                si bandera2 = verdadero entonces
+                                    Escribir "el mecanico ", nombremecanico, " dejo las siguente observaciones entre ellas las piesas que cambio", observacionesdesalida;
+                                SiNo
+                                    Escribir "La moto no se le a realizado registro de salida";
+                                    
+                                FinSi
+                            2:
+                                
+                                Escribir " Muchas gracias por su cofianza, cuando este reparada la moto nos comunicamos con usted";
+                            De Otro Modo:
+                                
+                                Escribir "La opción elegida no existe";
+                            
+                        FinSegun
+                    3:
+                        
+                        Escribir " Muchas gracias por su cofianza cuando este reparada la moto nos comunicamos con usted";
+                        
+                    De Otro Modo:
+                        
+                        Escribir "La opción elegida no existe";
+                        
+                FinSegun
+                
+            2:
+                
+                
+                si bandera1 = Verdadero Entonces
+                    
+                    Escribir "La moto fue asignada al mecanico ", nombremecanico, " y tiene las siguentes observacion por parte del dueño: ", observacionesingreso;
+                SiNo
+                    
+                    Escribir "No se a ingresado ninguna moto";
+                    
+                    
+                FinSi
+            3:
+                
+                
+                si bandera2 = verdadero entonces
+                    Escribir "el mecanico ", nombremecanico, "dejo las siguente observaciones entre ellas las piesas que cambio", observacionesdesalida;
+                SiNo
+                    Escribir "La moto no se le a realizado registro de salida";
+                    
+                FinSi
+                
+            De Otro Modo:
+                
+                Escribir "La opción elegida no existe";
+            
+        FinSegun
+        
+        
+    FinProceso
+    </textarea>
+    <br />
+    <h2>Punto 7</h2>
+    <p>
+      La Secretaría de Salud Municipal requiere de una aplicación que le permita
+      calcular el IMC (Índice de masa corporal) y requiere los datos peso en
+      kilogramos y estatura en metros Para cada persona encuestada adicional a
+      los datos suministrados, debe mostrar el resultado para cada uno y
+      establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y
+      obeso).
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso IndiceDeMasaCorporal
+	
+        Definir nombrecompleto Como Caracter;
+        Definir documento Como Entero;
+        Definir peso Como Real;
+        Definir estatura Como Real;
+        Definir IMC Como Real;
+        
+        Escribir "Ingresa tu nombre completo";
+        Leer nombrecompleto;
+        
+        Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+        Leer documento;
+        
+        Escribir "Ingresa tu peso en kilogramos";
+        Leer peso;
+        
+        Escribir "Ingresa tu estatura en metros";
+        Leer estatura;
+        
+        IMC<- peso/estatura^2;
+        
+        si IMC <= 18.5 Entonces
+            Escribir nombrecompleto, " con Documento numero:", documento, " su peso es de ", peso, " kg y su estatura es de ", estatura, " metros su índice de masa corparal arroja que se encuntra bajo de peso";
+        FinSi
+        si (IMC > 18.5) y (IMC <= 24.99) Entonces
+            Escribir nombrecompleto, " con Documento numero:", documento, " su peso es de ", peso, " kg y su estatura es de ", estatura, " metros suíndice de masa corparal arroja que se encuntra en un peso normal";
+        FinSi
+        si (IMC >= 25.0) y (IMC <= 29.99) Entonces
+            Escribir nombrecompleto, " con Documento numero:", documento, " su peso es de ", peso, " kg y su estatura es de ", estatura, " metros su índice de masa corparal arroja que se encuntra en sobre peso";
+        FinSi
+        si IMC > 30.0 Entonces
+            Escribir nombrecompleto, " con Documento numero:", documento, " su peso es de ", peso, " kg y su estatura es de ", estatura, "metros su índice de masa corparal arroja que tiene obesidad";
+        FinSi
+        
+        
+    FinProceso
+    </textarea>
+    <br />
+    <h2>Punto 8</h2>
+    <p>
+      El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una
+      aplicación que le permita registrar los pedidos de los clientes en cuanto
+      a las tortas que realiza. Cada torta tiene unas características propias
+      como sabor, cantidad (porciones) y decoraciones). Se requiere que la
+      aplicación permita registrar los pedidos, las tortas disponibles y las
+      ventas que se registren diariamente.
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso PasteleriaApp
+	
+        Definir nombrecompleto Como Caracter;
+        Definir documento Como Entero;
+        Definir celular Como Entero;
+        Definir direccion Como Caracter;
+        Definir pedido Como Caracter;
+        Definir opcion1 Como Entero;
+        Definir opcion2 Como Entero;
+        Definir opcion3 Como Entero;
+        Definir con1 Como Entero;
+        Definir con2 Como Entero;
+        Definir conv Como Entero;
+        Definir cont Como real;
+        
+        con1<-2;
+        con2<-2;
+        conv<-0;
+        cont<-0;
+        
+        
+        Escribir "Elije una opción";
+        Escribir "1. Registrar Pedido ";
+        Escribir "2. Tortas Disponibles ";
+        Escribir "3. Venta Diaria";
+        Leer opcion1;
+        Limpiar Pantalla;
+        
+        Segun opcion1 Hacer
+            1:
+                si conv <= 4 Entonces
+                    Escribir "Ingresar tu nombre completo.";
+                    Leer nombrecompleto;
+                    Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                    Leer documento;
+                    Escribir "Ingresa tu numero de celular.";
+                    Leer celular;
+                    Escribir "Ingresa direccion donde llegarian el producto";
+                    Leer direccion;
+                    Escribir "Ingresar pedido";
+                    Escribir "1. Torta Pasión de Chocolate";
+                    Escribir "2. Torta de Maracuya ";
+                    Leer opcion2;
+                    Limpiar Pantalla;
+                    Segun opcion2 Hacer
+                        1:
+                            si (con1 <= 2) y (con1 <>0 )Entonces
+                                Escribir " El pedido ha quedo registrado";
+                                con1<-con1-1;
+                                conv<-conv+1;
+                                cont<-cont + 88.600;
+                                
+                            SiNo
+                                Escribir " Esta torta ya no esta disponible";
+                            FinSi
+                            
+                            Escribir "Elije una opción";
+                            Escribir "1. Registrar Pedido ";
+                            Escribir "2. Tortas Disponibles ";
+                            Escribir "3. Venta Diaria";
+                            Leer opcion1;
+                            
+                            Limpiar Pantalla;
+                            
+                            Segun opcion1 Hacer
+                                1:
+                                    si conv <= 4 Entonces
+                                        
+                                        Escribir "Ingresar tu nombre completo.";
+                                        Leer nombrecompleto;
+                                        Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                                        Leer documento;
+                                        Escribir "Ingresa tu numero de celular.";
+                                        Leer celular;
+                                        Escribir "Ingresa direccion donde llegarian el producto";
+                                        Leer direccion;
+                                        Escribir "Ingresar pedido";
+                                        Escribir "1. Torta Pasión de Chocolate";
+                                        Escribir "2. Torta de Maracuya ";
+                                        Leer opcion2;
+                                        Limpiar Pantalla;
+                                        segun opcion2 Hacer
+                                            1:
+                                                si (con1 <= 2) y (con1 <>0 ) Entonces
+                                                    Escribir " El pedido ha quedo registrado";
+                                                    con1<-con1-1;
+                                                    conv<-conv+1;
+                                                    cont<-cont + 88.600;
+                                                SiNo
+                                                    Escribir " Esta torta ya no esta disponible";
+                                                FinSi
+                                                
+                                                
+                                                Escribir "Elije una opción";
+                                                Escribir "1. Registrar Pedido ";
+                                                Escribir "2. Tortas Disponibles ";
+                                                Escribir "3. Venta Diaria";
+                                                Leer opcion1;
+                                                Limpiar Pantalla;
+                                                
+                                                segun opcion1 hacer
+                                                    1:
+                                                        si conv <= 4 Entonces
+                                                            Escribir "Ingresar tu nombre completo.";
+                                                            Leer nombrecompleto;
+                                                            Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                                                            Leer documento;
+                                                            Escribir "Ingresa tu numero de celular.";
+                                                            Leer celular;
+                                                            Escribir "Ingresa direccion donde llegarian el producto";
+                                                            Leer direccion;
+                                                            Escribir "Ingresar pedido";
+                                                            Escribir "1. Torta Pasión de Chocolate";
+                                                            Escribir "2. Torta de Maracuya ";
+                                                            Leer opcion2;
+                                                            Limpiar Pantalla;
+                                                            segun opcion2 Hacer
+                                                                1:
+                                                                    si (con1 <= 2) y (con1 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con1<-con1-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-cont + 88.600;
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                2:
+                                                                    
+                                                                    si (con2 <= 2) y (con2 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con2<-con2-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-cont + 88.600;
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                    
+                                                                De Otro Modo:
+                                                                    
+                                                                    Escribir "La opción elegida no existe";	
+                                                            FinSegun
+                                                        SiNo
+                                                            Escribir " ya no hay tortas disponibles";
+                                                            
+                                                        FinSi
+                                                        
+                                                    2:
+                                                        Escribir "cantidad ", con1, " Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                                                        Escribir "cantidad ", con2, " Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+                                                    3:
+                                                        Escribir " hoy has vedido ", conv, " valor total vendido $", cont;
+                                                    De Otro Modo:
+                                                        
+                                                        Escribir "La opción elegida no existe";		
+                                                FinSegun
+                                                
+                                            2:
+                                                si (con2 <= 2) y (con2 <>0 ) Entonces
+                                                    Escribir " El pedido ha quedo registrado";
+                                                    con2<-con2-1;
+                                                    conv<-conv+1;
+                                                    cont<-cont + 88.600;
+                                                SiNo
+                                                    Escribir " Esta torta ya no esta disponible";
+                                                FinSi
+                                            
+                                                
+                                                Escribir "Elije una opción";
+                                                Escribir "1. Registrar Pedido ";
+                                                Escribir "2. Tortas Disponibles ";
+                                                Escribir "3. Venta Diaria";
+                                                Leer opcion1;
+                                                Limpiar Pantalla;
+                                                
+                                                segun opcion1 hacer
+                                                    1:
+                                                        
+                                                        si conv <= 4 Entonces
+                                                            Escribir "Ingresar tu nombre completo.";
+                                                            Leer nombrecompleto;
+                                                            Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                                                            Leer documento;
+                                                            Escribir "Ingresa tu numero de celular.";
+                                                            Leer celular;
+                                                            Escribir "Ingresa direccion donde llegarian el producto";
+                                                            Leer direccion;
+                                                            Escribir "Ingresar pedido";
+                                                            Escribir "1. Torta Pasión de Chocolate";
+                                                            Escribir "2. Torta de Maracuya ";
+                                                            Leer opcion2;
+                                                            Limpiar Pantalla;
+                                                            segun opcion2 Hacer
+                                                                1:
+                                                                    si (con1 <= 2) y (con1 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con1<-con1-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-cont + 88.600;
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                2:
+                                                                    
+                                                                    si (con2 <= 2) y (con2 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con2<-con2-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-cont + 88.600;
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                    
+                                                                De Otro Modo:
+                                                                    
+                                                                    Escribir "La opción elegida no existe";	
+                                                            FinSegun
+                                                        SiNo
+                                                            Escribir " ya no hay tortas disponibles";
+                                                            
+                                                        FinSi
+                                                        
+                                                    2:
+                                                        Escribir "cantidad ", con1, " Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                                                        Escribir "cantidad ", con2, " Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+                                                    3:
+                                                        Escribir " hoy has vedido ", conv, " valor total vendido $", cont;
+                                                    De Otro Modo:
+                                                        
+                                                        Escribir "La opción elegida no existe";		
+                                                FinSegun
+                                                
+                                            De Otro Modo:
+                                                
+                                                Escribir "La opción elegida no existe";		
+                                        FinSegun
+                                        
+                                        
+                                        
+                                    sino
+                                        Escribir " ya no hay tortas disponibles";
+                                    FinSi
+                                2:
+                                    Escribir "cantidad ", con1, " Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                                    Escribir "cantidad ", con2, " Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+                                    
+                                3:
+                                    Escribir " hoy has vedido ", conv, "valor total vendido $", cont;
+                                De Otro Modo:
+                                    Escribir "La opción elegida no existe";
+                                    
+                                    
+                                
+                            FinSegun
+                            
+                            
+                            
+                        2:
+                            
+                            si (con2 <= 2) y (con2 <> 0 ) Entonces
+                                Escribir " El pedido ha quedo registrado";
+                                con2<-con2-1;
+                                conv<-conv+1;
+                                cont<-cont + 88.600;
+                            SiNo
+                                Escribir " Esta torta ya no esta disponible";
+                            FinSi
+                            
+                            Escribir "Elije una opción";
+                            Escribir "1. Registrar Pedido ";
+                            Escribir "2. Tortas Disponibles ";
+                            Escribir "3. Venta Diaria";
+                            Leer opcion1;
+                            Limpiar Pantalla;
+                            Segun opcion1 Hacer
+                                1:
+                                    si conv <= 4 Entonces
+                                        
+                                        Escribir "Ingresar tu nombre completo.";
+                                        Leer nombrecompleto;
+                                        Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                                        Leer documento;
+                                        Escribir "Ingresa tu numero de celular.";
+                                        Leer celular;
+                                        Escribir "Ingresa direccion donde llegarian el producto";
+                                        Leer direccion;
+                                        Escribir "Ingresar pedido";
+                                        Escribir "1. Torta Pasión de Chocolate";
+                                        Escribir "2. Torta de Maracuya ";
+                                        Leer opcion2;
+                                        Limpiar Pantalla;
+                                        segun opcion2 Hacer
+                                            1:
+                                                si (con1 <= 2) y (con1 <>0 ) Entonces
+                                                    Escribir " El pedido ha quedo registrado";
+                                                    con1<-con1-1;
+                                                    conv<-conv+1;
+                                                    cont<-cont + 88.600;
+                                                SiNo
+                                                    Escribir " Esta torta ya no esta disponible";
+                                                FinSi
+                                                
+                                                
+                                                
+                                                Escribir "Elije una opción";
+                                                Escribir "1. Registrar Pedido ";
+                                                Escribir "2. Tortas Disponibles ";
+                                                Escribir "3. Venta Diaria";
+                                                Leer opcion1;
+                                                Limpiar Pantalla;
+                                                segun opcion1 hacer
+                                                    1:
+                                                        si conv <= 4 Entonces
+                                                            Escribir "Ingresar tu nombre completo.";
+                                                            Leer nombrecompleto;
+                                                            Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                                                            Leer documento;
+                                                            Escribir "Ingresa tu numero de celular.";
+                                                            Leer celular;
+                                                            Escribir "Ingresa direccion donde llegarian el producto";
+                                                            Leer direccion;
+                                                            Escribir "Ingresar pedido";
+                                                            Escribir "1. Torta Pasión de Chocolate";
+                                                            Escribir "2. Torta de Maracuya ";
+                                                            Leer opcion2;
+                                                            Limpiar Pantalla;
+                                                            segun opcion2 Hacer
+                                                                1:
+                                                                    si (con1 <= 2) y (con1 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con1<-con1-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-cont + 88.600;
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                2:
+                                                                    
+                                                                    si (con2 <= 2) y (con2 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con2<-con2-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-cont + 88.600;
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                    
+                                                                De Otro Modo:
+                                                                    
+                                                                    Escribir "La opción elegida no existe";	
+                                                            FinSegun
+                                                        SiNo
+                                                            Escribir " ya no hay tortas disponibles";
+                                                            
+                                                        FinSi
+                                                        
+                                                    2:
+                                                        Escribir "cantidad ", con1, " Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                                                        Escribir "cantidad ", con2, " Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+                                                    3:
+                                                        Escribir " hoy has vedido ", cont, " valor total vendido $", cont;
+                                                        
+                                                    De Otro Modo:
+                                                        
+                                                        Escribir "La opción elegida no existe";	
+                                                FinSegun
+                                                
+                                            2:
+                                                si (con2 <= 2) y (con2 <>0 ) Entonces
+                                                    Escribir " El pedido ha quedo registrado";
+                                                    con2<-con2-1;
+                                                    conv<-conv+1;
+                                                    cont<-cont + 88.600;
+                                                SiNo
+                                                    Escribir " Esta torta ya no esta disponible";
+                                                FinSi
+                                                
+                                                
+                                                
+                                                Escribir "Elije una opción";
+                                                Escribir "1. Registrar Pedido ";
+                                                Escribir "2. Tortas Disponibles ";
+                                                Escribir "3. Venta Diaria";
+                                                Leer opcion1;
+                                                Limpiar Pantalla;
+                                                segun opcion1 hacer
+                                                    1:
+                                                        si conv <= 4 Entonces
+                                                            Escribir "Ingresar tu nombre completo.";
+                                                            Leer nombrecompleto;
+                                                            Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                                                            Leer documento;
+                                                            Escribir "Ingresa tu numero de celular.";
+                                                            Leer celular;
+                                                            Escribir "Ingresa direccion donde llegarian el producto";
+                                                            Leer direccion;
+                                                            Escribir "Ingresar pedido";
+                                                            Escribir "1. Torta Pasión de Chocolate";
+                                                            Escribir "2. Torta de Maracuya ";
+                                                            Leer opcion2;
+                                                            Limpiar Pantalla;
+                                                            segun opcion2 Hacer
+                                                                1:
+                                                                    si (con1 <= 2) y (con1 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con1<-con1-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-cont + 88.600;
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                2:
+                                                                    
+                                                                    si (con2 <= 2) y (con2 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con2<-con2-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-cont + 88.600;
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                    
+                                                                De Otro Modo:
+                                                                    
+                                                                    Escribir "La opción elegida no existe";	
+                                                            FinSegun
+                                                        SiNo
+                                                            Escribir " ya no hay tortas disponibles";
+                                                            
+                                                        FinSi
+                                                        
+                                                    2:
+                                                        Escribir "cantidad ", con1, " Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                                                        Escribir "cantidad ", con2, " Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+                                                    3:
+                                                        Escribir " hoy has vedido ", cont, " valor total vendido $", cont;
+                                                    De Otro Modo:
+                                                        
+                                                        Escribir "La opción elegida no existe";		
+                                                FinSegun
+                                                
+                                                
+                                                
+                                            De Otro Modo:
+                                                
+                                                Escribir "La opción elegida no existe";	
+                                        FinSegun
+                                        
+                                    sino
+                                        Escribir " ya no hay tortas disponibles";
+                                    FinSi
+                                2:
+                                    Escribir "cantidad ", con1, " Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                                    Escribir "cantidad ", con2, " Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+                                3:
+                                    Escribir " hoy has vedido ", cont, " valor total vendido $", cont;
+                                    
+                                De Otro Modo:
+                                    
+                                    Escribir "La opción elegida no existe";	
+                            FinSegun
+                            
+                        De Otro Modo:
+                            
+                            Escribir "La opción elegida no existe";		
+                    FinSegun
+                    
+                    
+                    
+                    
+                    
+                SiNo
+                    Escribir " ya no hay tortas disponibles";
+                FinSi
+                
+            2:
+                Escribir "cantidad 2 - Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                Escribir "cantidad 2 - Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+            3:
+                Escribir " Aun no se ha hecho ningun pedido";
+                
+            De Otro Modo:
+                
+                Escribir "La opción elegida no existe";	
+                
+            FinSegun
+        
+        
+    FinProceso
+    
+    FinProceso
+    </textarea>
+    <br />
+    <h2>Punto 9</h2>
+    <p>
+      El profesor de geometría está explicando a sus estudiantes las fórmulas
+      para calcular el área de diferentes figuras geométricas, para ello
+      requiere una aplicación que le facilite el ejercicio solicitándole los
+      valores al estudiante. La aplicación debe permitir que el estudiante
+      seleccione si desea calcular el área de un rectángulo, triángulo o
+      trapecio. No olvide solicitar los datos necesarios para realizar cada
+      cálculo y mostrar su respectivo resultado.
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso GeoApp
+	
+	Definir base1 Como Real;
+	Definir base2 Como Real;
+	Definir altura Como Real;
+	Definir resultado Como Real;
+	Definir opcion1 Como Entero;
+	
+	Escribir "Elije el area que deseas calcular";
+	Escribir "1. Rectángulo";
+	Escribir "2. Triángulo ";
+	Escribir "3. Trapecio";
+	Leer opcion1;
+	
+	Segun opcion1 Hacer
+		1:
+			Escribir "Ingresa la base del rectángulo";
+			Leer base1;
+			Escribir "ingresa la altura del rectángulo";
+			Leer altura;
+			resultado<-base1*altura;
+			Escribir "EL área del rectángulo es: ", resultado;
+		2:
+			Escribir "Ingrasa la base del triángulo";
+			Leer base1;
+			Escribir "ingresa la altura del triángulo ";
+			Leer altura;
+			resultado<-(base1*altura)/2;
+			Escribir "EL área del triángulo es: ", resultado;
+		3:
+			Escribir "Ingrasa la base1 del trapecio";
+			Leer base1;
+			Escribir "Ingrasa la base2 del trapecio";
+			Leer base2;
+			Escribir "ingresa la altura del trapecio ";
+			Leer altura;
+			resultado<-((base1+base2)*altura)/2;
+			Escribir "EL área del trapecio es: ", resultado;
+			
+	FinSegun
+	
+FinProceso
+
+   
+    </textarea>
+    <br />
+    <h2>Punto 10</h2>
+    <p>
+      El banco "Su banco fiel" es un banco que inicia sus actividades
+      financieras y necesita una aplicación para llevar las cuentas de sus
+      usuarios; por lo tanto, se sugiere que la cuenta tenga los atributos
+      titular y cantidad. Para cada cliente las cuentas permitirán realizar
+      ingresos, retiros o consultas de valor. En los ingresos no se pueden
+      insertar valores negativos y para los retiros el valor no puede ser mayor
+      al valor que tiene en la cuenta.
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso BancoFielApp
+        Definir nombreCliente Como Caracter;
+        Definir documento Como Entero;
+        Definir numeroCuenta Como Entero;
+        Definir valorIngresado como Real;
+        Definir saldo Como Real;
+        Definir opcion1 Como Entero;
+        Definir opcion2 Como Entero;
+        Definir opcion3 Como Entero;
+    
+        
+        Escribir "Elije una opción";
+        Escribir "1. Ingresar a la aplicacion ";
+        Escribir "2. Salir ";
+        Leer opcion1;
+        
+        Limpiar Pantalla;
+        
+        Segun opcion1 Hacer
+            1: 
+                
+                Escribir "Ingresar tu nombre completo.";
+                Leer nombreCliente;
+                Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                Leer documento;
+                Escribir "Ingresa tu numero de cuenta.";
+                Leer numeroCuenta;		
+                saldo <- 0;
+                Limpiar Pantalla;
+                
+                Escribir "El cliente ha sido ingresado correctamente";
+                Escribir "Elije una opción";
+                Escribir "1. Ingresar dinero a la cuenta";
+                Escribir "2 Retirar dinero de la cuenta";
+                Escribir "3. Consultar saldo";
+                Escribir "4. Salida Segura";
+                Leer opcion2;
+                
+                Limpiar Pantalla;
+                
+                Segun opcion2 Hacer
+                    1: 
+                        Escribir "1. Ingresar dinero a la cuenta";
+                        Escribir "Ingrese el valor a ingresar: ";
+                        leer valorIngresado;
+                        saldo <- saldo + valorIngresado;
+                        Escribir "la cantidad de: $", valorIngresado, " fue ingresado correctamente a su cuenta" ;
+                        
+                        Escribir "Elije una opción";
+                        Escribir "1. Ingresar dinero a la cuenta";
+                        Escribir "2 Retirar dinero de la cuenta";
+                        Escribir "3. Consultar saldo";
+                        Leer opcion2;
+                        
+                        Segun opcion2 Hacer
+                            1:
+                                Escribir "1. Ingresar dinero a la cuenta";
+                                Escribir "Ingrese el valor a ingresar: ";
+                                leer valorIngresado;
+                                
+                                si valorIngresado < 0 Entonces
+                                    Escribir "No es permitido ingresar valores negativos ";
+                                SiNo
+                                    saldo <- saldo + valorIngresado;
+                                    Escribir "la cantidad de: $", valorIngresado, " fue ingresado correctamente a su cuenta" ;
+                                FinSi
+                                
+                            2: 
+                                Escribir "2. Retirar dinero de la cuenta";
+                                Escribir "Ingrese el valor a retirar: ";
+                                leer valorIngresado;
+                                
+                                SI valorIngresado > saldo Entonces
+                                    Escribir "Valor ingresado mayor a saldo actual, no se pudo realizar transaccion";
+                                SiNo
+                                    saldo <- saldo - valorIngresado;
+                                    Escribir "la cantidad de: $", valorIngresado, " fue retirado correctamente a su cuenta" ;
+                                    Escribir "Su saldo actual es de: $", valorIngresado ;
+                                FinSi
+                                
+                            3:
+                                Escribir "3. Consultar saldo";
+                                Escribir "Su saldo actual es de: $", valorIngresado ;
+                        FinSegun
+                    2: 
+                        Escribir "2. Retirar dinero de la cuenta";
+                        Escribir "Ingrese el valor a retirar: ";
+                        leer valorIngresado;
+                        
+                        SI valorIngresado > saldo Entonces
+                            Escribir "Valor ingresado mayor a saldo actual, no se pudo realizar transaccion";
+                        SiNo
+                            saldo <- saldo - valorIngresado;
+                            Escribir "la cantidad de: $", valorIngresado, " fue retirado correctamente a su cuenta" ;
+                            Escribir "Su saldo actual es de: $", valorIngresado ;
+                        FinSi
+                        
+                    3:
+                        Escribir "3. Consultar saldo";
+                        Escribir "Su saldo actual es de: $", valorIngresado ;
+                FinSegun
+            2:
+                Escribir "Ha salido con exito ";
+        FinSegun
+        
+        
+    FinProceso
+    
+    </textarea>
+    <br />
+    <select id="slcOpciones">
+        <option value="1">Tema Morado</option>
+        <option value="2">Tema Azul</option>
+        <option value="3">Tema Verde</option>
+    </select>
+    <button id="boton1" onclick="ejecutar()">Aplicar Tema</button>
+    </main>
+  </body>
+</html>

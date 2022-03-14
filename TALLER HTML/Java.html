@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseint</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/hojadevida.js"></script>
+  </head>
+  <body class="estilo1" onload="main1()">
+    <a href="./portafolio.html"
+      ><img
+        src="./imagenes/volver.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+    <h1><b>Taller Java</b></h1>
+    <div id="part1" class="estilo1-acordeon1">
+      <div onclick="acordeon1()" id="encabezado1" class="estilo1-encabezado">
+        <a href="./javataller1.html">
+          <p>
+            <em><b>TALLER 1</b></em>
+          </p></a
+        >
+      </div>
+
+      <div onclick="acordeon2()" id="encabezado2" class="estilo1-encabezado">
+        <a href="./tallerfinaljava.html">
+          <p>
+            <em><b>TALLER FINA</b></em>
+          </p></a
+        >
+      </div>
+    <a href="download/HV Karen Fonseca.pdf"> Descargar hoja de vida</a>
+    <select id="slcOpciones">
+      <option value="1">Tema Morado</option>
+      <option value="2">Tema Azul</option>
+      <option value="3">Tema Verde</option>
+    </select>
+    <button id="boton1" onclick="ejecutar1()">Aplicar Tema</button>
+  </body>
+</html>

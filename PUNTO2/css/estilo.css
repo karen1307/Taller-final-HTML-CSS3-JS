@@ -1,0 +1,54 @@
+.body1 {
+  width: 1024px;
+  margin: auto;
+  text-align: center;
+  font-family: cursive;
+  background: url("https://static3.abc.es/media/bienestar/2021/07/01/frutas-verduras-julio-ko2--620x349@abc.jpg");
+}
+
+.estilo-h1 {
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-family: cursive;
+  font-size: 10ch;
+}
+
+.paquete {
+  width: 1024px;
+  height: 710px;
+  margin: auto;
+  border: 2px solid rgb(32, 27, 27);
+  font-family: cursive;
+  background-color: rgba(200, 134, 27, 0.918);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.estilo-fruta1 {
+    width: 150px; 
+  padding: 10px;
+  margin-left: 380px;
+  margin-bottom: 10px;
+  font-size: normal;
+  font-family: cursive;
+  background-color: rgb(189, 34, 23);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.estilo-fruta2 {
+  width: 150px;
+  padding: 10px;
+  margin-left: 380px;
+  margin-bottom: 10px;
+  font-size: normal;
+  font-family: cursive;
+  background-color: rgb(36, 190, 22);
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+.boton {
+  width: 100px;
+  height: 100px;
+}

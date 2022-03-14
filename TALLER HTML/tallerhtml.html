@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseinttaller1</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/hojadevida.js"></script>
+</head>
+
+<body class="estilo1" onload="main()">
+    <a href="./hmtl,css3,js.html"><img src="./imagenes/volver.png" width="50" height="50" alt="volver pagina anterior" /></a>
+
+    <header>
+        <h1 class="estilo1-h1"><b>Taller HTML</b></h1>
+    </header>
+
+    <a href="https://github.com/karen1307/Taller-hoja-de-vida.git"><img src="./imagenes/github.png" width="50" height="50"
+            alt="volver pagina anterior" /></a>
+
+
+    <h2>index</h2>
+    <p>Estimado aprendiz, para este taller usted deberá crear su hoja de vida incluyendo su foto y los siguientes apartados:
+        Información principal<br>
+        Experiencia laboral (mínimo 4)<br>
+        Referencias personales (mínimo 3)<br>
+        Referencias familiares (mínimo 3)<br>
+        Estudios realizados (mínimo 2)<br>
+        Cada punto anterior debe estar en una página independiente, no olvide que todo debe estar entrelazado para poder navegar por toda la hoja de vida, como también debe de existir alguna forma de descargar su hoja de vida en formato PDF.</p>
+    
+        <textarea name="texto" class="mensaje">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Hoja de vida</title>
+            <link rel="stylesheet" href="./css/estilos.css">
+            <script src="./js/hojadevida.js"></script>
+        </head>
+        
+        <body class="estilo1" onload="main()">
+        
+            <header >
+                <h1 class="estilo1-h1"><b>KAREN NATHALY FONSECA MORENO</b> </h1>
+            <p id="imagenPrincipal" class="estilo1-box5"> <img src="./imagenes/Foto.jpeg"width="150" height="150" alt="foto de la persona"></p>
+            <P></P>Soy estudiante de ingeniería informática (séptimo semestre) con capacidades para asumir retos con dinamismo y responsabilidad; <br> 
+                poseo actitudes de liderazgo y trabajo en equipo, con aspiraciones y deseos de superación basados en el aprendizaje,<br> 
+                con actitud positiva hacia el emprendimiento.<br>Soy disciplinada, cordial, honesta, persistente y creativa. disfruto de la lectura y aprendo con facilidad.
+                </p>
+            </header>
+            <nav>
+                    <a href="./Experiencialaboral.html"><p id="link1" class="estilo1-box1">Experiencia Laboral</p></a>
+                    <a href="./Referenciaspersonales.html"><p id="link2" class="estilo1-box2">Referencias Personales</p></a>
+                    <a href="./Referenciasfamiliares.html"><p id="link3" class="estilo1-box3">Referencias Familiares</p></a>
+                    <a href="./Estudiosrealizados.html"><p id="link4" class="estilo1-box4">Estudios Realizados</p></a>
+                    <a href="./portafolio.html"><p id="link5" class="estilo1-box6">Portafolio</p></a>
+            </nav>   
+            <h3 class="estilo-h1" >Informacion Personal</h3>
+            <P></P>Correo: k.010@hotmail.com</P>
+            <P></P>Celular: +57314845325</p>
+            <P></P>Cumpleaños: 13 Julio 1997 (24 años) </p>
+            <P></P>Direccion: Carrera 72B #75-27 apt 503 Medellin - Antioquia</p>
+            <a href="./download/HV Karen Fonseca.pdf"> Descargar hoja de vida</a>
+            <br>
+            <select id="slcOpciones">
+                <option value="1">Tema Morado</option>
+                <option value="2">Tema Azul</option>
+                <option value="3">Tema Verde</option>
+            </select>
+            <button id="boton1" onclick="ejecutar()">Aplicar Tema</button>
+            </main>
+            
+            
+        </body>
+        </html>
+    </textarea>
+    <br />
+
+    <select id="slcOpciones">
+        <option value="1">Tema Morado</option>
+        <option value="2">Tema Azul</option>
+        <option value="3">Tema Verde</option>
+    </select>
+    <button id="boton1" onclick="ejecutar()">Aplicar Tema</button>
+    </main>
+</body>
+
+</html>

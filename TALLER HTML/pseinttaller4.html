@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseinttaller1</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/hojadevida.js"></script>
+  </head>
+  <body class="estilo1" onload="main()">
+    <a href="./pseint.html"
+      ><img
+        src="./imagenes/volver.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+
+    <header>
+      <h1 class="estilo1-h1"><b>PSeInt Taller 4</b></h1>
+    </header>
+
+    <a href="https://github.com/karen1307/tallerGit.git"
+      ><img
+        src="./imagenes/github.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+    <a href="https://youtu.be/_X3otKp2bmM"
+      ><img
+        src="./imagenes/youtube.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+
+    <h2>Punto 1</h2>
+    <p>Crear un vector de tipo Entero con 5 posiciones, llenarlo con información solicitada al usuario. Después de recoger toda la información, se requiere imprimir el índice de cada posición en el arreglo con su valor de la siguiente manera:</p>
+    <textarea name="texto" class="mensaje">
+    Proceso Punto1
+        Definir num, i Como Entero;
+        Dimension num[5];
+        para i <- 0 Hasta 4 Con Paso 1 Hacer
+            Escribir  "ingresa un número";
+            Leer num[i];
+        FinPara
+        Limpiar Pantalla;
+        i<-0;
+        Mientras i <= 4 Hacer
+            Escribir "[", i ,"]", " = ", num[i]; 
+            i<-i+1;
+        FinMientras         
+    FinProceso
+    
+    </textarea>
+    <br />
+
+    <h2>Punto 2</h2>
+    <p>
+        Crear un arreglo de números enteros de 20 posiciones, el cual, debe ser llenado con números aleatorios entre 1 y 100; después de haber llenado dicho arreglo, se debe volver a recorrer utilizando un ciclo diferente al que se usó para llenarse e imprimir los números pares e impares. 
+        Ejemplo
+        Números pares: 2, 4, 6, 8, 10
+        Números impares: 1, 3, 5, 7, 9
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso Punto2
+        Definir num, i, j Como Entero;
+        Dimension num[20];
+        j<-0;
+        Escribir "Numeros aleatorios";
+        para i <- 0 Hasta 19 Con Paso 1 Hacer
+            j<-Aleatorio(1,100);
+            num[i]<-j;
+            Escribir Sin Saltar num[i],", ";
+        FinPara
+        i<-0;
+        Escribir "";
+        Escribir "Numeros pares";
+        Mientras i <= 19 Hacer
+            si num[i] mod 2 = 0 Entonces
+                Escribir Sin Saltar num[i],", ";
+            finsi
+            i<-i+1;
+        FinMientras
+        i<-0;
+        Escribir "";
+        Escribir "Numeros impares";
+        Mientras i <= 19 Hacer
+            si num[i] mod 2 <> 0 Entonces
+                Escribir Sin Saltar num[i],", ";
+            finsi
+            i<-i+1;
+        FinMientras
+        
+    FinProceso
+    
+    </textarea>
+    <br />
+
+    <h2>Punto 3</h2>
+    <p>
+    Imprimir los números primos del 1 al 1000, el resultado debe ser buscado de forma matemática.
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso Punto3
+        Definir num,i,cont Como Entero;
+        num<-1;
+        Escribir "Numeros primos del 1 al 1000";
+        Mientras num<=1000 Hacer
+            cont <- 0;
+            si num >= 1 Entonces
+                para i<-1 Hasta num Con Paso 1 Hacer
+                    si num mod i = 0 Entonces
+                        cont <- cont+1;
+                    FinSi
+                FinPara
+                si cont = 2 Entonces
+                    Escribir Sin Saltar num, ", ";
+                FinSi
+            FinSi
+            num<-num+1;
+        FinMientras
+    
+    FinProceso
+    
+
+    </textarea>
+    <br />
+
+    <h2>Punto 4</h2>
+    <p>
+        Dada la siguiente matriz bidimensional, el cual debe de quemar en el código <br>
+        01 02 03 04 05<br>
+        06 07 08 09 10<br>
+        11 12 13 14 15<br>
+        16 17 18 19 20<br>
+        Utilizando el conocimiento adquirido, a excepción de hacerlo de forma manual, imprima la siguiente matriz bidimensional.<br>
+        01 02 03 04 05<br>
+        10 09 08 07 06<br>
+        11 12 13 14 15<br>
+        20 19 18 17 16<br>
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso Punto4
+        Definir fila,columna Como Entero;
+        Definir matriz Como Caracter;
+        Dimension matriz[4,5];
+        
+        matriz[0,0] <- "01";
+        matriz[0,1] <- "02";
+        matriz[0,2] <- "03";
+        matriz[0,3] <- "04";
+        matriz[0,4] <- "05";
+        matriz[1,0] <- "06";
+        matriz[1,1] <- "07";
+        matriz[1,2] <- "08";
+        matriz[1,3] <- "09";
+        matriz[1,4] <- "10";
+        matriz[2,0] <- "11";
+        matriz[2,1] <- "12";
+        matriz[2,2] <- "13";
+        matriz[2,3] <- "14";
+        matriz[2,4] <- "15";
+        matriz[3,0] <- "16";
+        matriz[3,1] <- "17";
+        matriz[3,2] <- "18";
+        matriz[3,3] <- "19";
+        matriz[3,4] <- "20";
+        
+        para fila<-0 hasta 3 Con Paso 1 Hacer
+            para columna<-0 Hasta 4 Con Paso 1 Hacer
+                Escribir matriz[fila,columna], " " Sin Saltar;
+            FinPara
+            Escribir " ";
+        FinPara
+        Escribir " ";
+        
+    
+        para fila<-0 hasta 3 Con Paso 1 Hacer
+            si fila = 0 o fila = 2 Entonces
+                para columna<-0 Hasta 4 Con Paso 1 Hacer
+                    Escribir matriz[fila,columna], " " Sin Saltar;
+                FinPara
+                Escribir " ";
+            FinSi
+            si fila = 1 o fila = 3 Entonces
+                para columna<-4 Hasta 0 Con Paso -1 Hacer
+                    Escribir matriz[fila,columna], " " Sin Saltar;
+                FinPara
+                Escribir " ";
+            FinSi
+            
+        FinPara
+    
+    FinProceso
+    
+
+    </textarea>
+    <br />
+
+    <h2>Punto 5</h2>
+    <p>
+        El usuario deberá insertar la fila y columna de la cual desea ver el resultado, el resultado de cada celda debe estar previamente calculado en una matriz bidimensional la cual cada resultado obedecerá a la fila y columna insertada por el usuario.
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso Punto5
+        Definir fila,columna,a,k,t,matriz,f,c Como Entero;
+        Dimension matriz[10,10];
+        a<-1;
+        
+        Escribir "                                                 Columna";
+        Escribir "Fila     0        1        2        3        4        5        6        7        8        9 ";
+    
+        para fila<-0 hasta 9 Con Paso 1 Hacer
+            k<-1;
+            para columna<-0 Hasta 9 Con Paso 1 Hacer
+                si columna = 0 Entonces
+                    Escribir "  ",fila, "    ", k, " * ", a,"  ", sin saltar;
+                    t<-k*a;
+                    matriz[fila,columna] <- t;
+                    k<-k+1;
+                SiNo
+                    Escribir "  ", k," * ", a,"  ", sin saltar;
+                    t<-k*a;
+                    matriz[fila,columna] <- t;
+                    k<-k+1;
+                FinSi
+                
+                
+            FinPara
+            Escribir " ";
+            a<-a+1;
+        FinPara
+        
+        
+        
+        Escribir "ingrese fila";
+        leer f;
+        Escribir "ingrese columna";
+        leer c;
+        Escribir "Resultado: ", matriz[f,c];
+        
+    </textarea>
+    <br />
+  </body>
+</html>

@@ -1,0 +1,2097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseinttaller1</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/hojadevida.js"></script>
+</head>
+
+<body class="estilo1" onload="main()">
+    <a href="./pseint.html"><img src="./imagenes/volver.png" width="50" height="50" alt="volver pagina anterior" /></a>
+
+    <header>
+        <h1 class="estilo1-h1"><b>PSeInt Taller 5</b></h1>
+    </header>
+
+    <a href="https://github.com/karen1307/tallerGit.git"><img src="./imagenes/github.png" width="50" height="50"
+            alt="volver pagina anterior" /></a>
+
+    <h2>Punto 1 Condicionales </h2>
+    <p>Realizar un programa en el cual se solicite la edad de una persona. Si la persona es mayor o igual a 18 años,
+        deberá mostrar en pantalla: Usted es mayor de edad.</p>
+    <textarea name="texto" class="mensaje">
+    SubProceso respuesta <- captura(dato)
+        Definir respuesta Como Entero;
+        Escribir dato;
+        Leer respuesta;
+    FinSubProceso
+    
+    Proceso Edad1
+        Definir edad Como Entero;
+        
+        edad<-captura("¿Cual es tu edad?");
+        
+        Limpiar Pantalla;
+        si edad >= 18 Entonces
+            Escribir "Usted es mayor de edad.";
+        FinSi
+        
+    FinProceso
+    
+    </textarea>
+    <br />
+
+    <h2>Punto 2 Condicionales</h2>
+    <p>
+        Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años, deberá
+        mostrar en pantalla: Usted aún es un niño(a).
+    </p>
+    <textarea name="texto" class="mensaje">
+    SubProceso respuesta <- captura(dato)
+        Definir respuesta Como Entero;
+        Escribir dato;
+        Leer respuesta;
+    FinSubProceso
+    
+    Proceso Edad2
+        Definir edad Como Entero;
+        
+        edad<-captura("¿Cual es tu edad?");
+        
+        si edad < 18 Entonces
+            Escribir "Usted aún es un niño(a).";
+        FinSi
+    FinProceso
+    </textarea>
+    <br />
+
+    <h2>Punto 3 Condicionales </h2>
+    <p>
+        Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la persona es mayor o
+        igual a 18 años, entonce se deberá imprimir en pantalla [Nombre completo] usted es mayor de edad, por lo tanto
+        puede entrar a la fiesta. Si la edad de la persona es menor que 18 años, entonces, deberá imprimirse el
+        siguiente mensaje: [Nombre completo] usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por
+        favor devuélvase a su casa.
+    </p>
+    <textarea name="texto" class="mensaje">
+    SubProceso respuesta <- captura(dato)
+        Definir respuesta Como Caracter;
+        Escribir "Ingrese tus ", dato;
+        Leer respuesta;
+    FinSubProceso
+    
+    SubProceso respuesta1 <- captura1(dato)
+        Definir respuesta1 Como Entero;
+        Escribir dato;
+        Leer respuesta1;
+    FinSubProceso
+    
+    Proceso Edad3
+        
+        Definir nombres Como Caracter;
+        Definir apellidos Como Caracter;
+        Definir edad Como Entero;
+        
+        nombres<-captura("nombres");
+        apellidos<-captura("apellidos");
+        edad<-captura1("¿Cual es tu edad?");
+        
+        Limpiar Pantalla;
+        
+        si edad >= 18 Entonces
+            Escribir nombres, " ",apellidos, " usted es mayor de edad, por lo tanto puede  entrar a la fiesta";
+        sino
+            Escribir  nombres, " ",apellidos, " usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.";
+        FinSi
+        
+    FinProceso
+    
+
+    </textarea>
+    <br />
+
+    <h2>Punto 4 Condicionales</h2>
+    <p>
+        La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el Porvenir,
+        requiere de una aplicación que permita registrar el alquiler de las películas que adquieren sus usuarios. Para
+        cada usuario se debe permitir la opción de alquilar película, consultar películas disponibles y recibir película
+        en la video tienda con la opción de realizar anotaciones sobre estas si se llegan a presentar daños u otra
+        novedad sobre la película.
+    </p>
+    <textarea name="texto" class="mensaje">
+    SubProceso respuesta <- captura(dato)
+        Definir respuesta Como Caracter;
+        Escribir "¿Ingresa tu ", dato;
+        Leer respuesta;
+    FinSubProceso
+    
+    SubProceso respuesta1 <- captura1(dato)
+        Definir respuesta1 Como entero;
+        Escribir "¿Ingresa tu ", dato, "?";
+        Leer respuesta1;
+    FinSubProceso
+    
+    Proceso VideoApp
+        
+        Definir nombrecompleto Como Caracter;
+        Definir documento Como Entero;
+        Definir celular Como Entero;
+        Definir opcion1 Como Entero;
+        Definir opcion2 Como Entero;
+        Definir opcion3 Como Entero;
+        Definir anotacion Como Caracter;
+    
+        
+        Escribir "Elije una opción";
+        Escribir "1. Alquilar pelicula.";
+        Escribir "2. Consultar peliculas disponibles.";
+        Escribir "3. Recibir pelicula.";
+        Leer opcion1;
+        
+        Limpiar Pantalla;
+        
+        segun opcion1 Hacer
+            1: 
+                Escribir "Nuestras peliculas disponibles, selecciona la que desees alquilar:";
+                Escribir "1. El origen";
+                Escribir "2. Ghost: la sombre del amor";
+                Escribir "3. El conjuro";
+                Escribir "4. Rápidos y Furiosos 7";
+                Escribir "5. No deseo ninguna";
+                Leer opcion2;
+                
+                Limpiar Pantalla;
+                
+                si opcion2 <= 5 Entonces
+                    si opcion2 <= 4 Entonces
+                        nombrecompleto<-captura("nombre completo");
+                        documento<-captura1("numero de documento sin puntos ni comas");
+                        celular<-captura1("numero de celular");
+                    
+                        Limpiar Pantalla;
+                    
+                        Escribir "Apartir de este momento puedes reclamar la pelicula en nuetra video tienda, recuerda que debes dejar un deposito de $20.000 por si la pelicula presenta algun daño";
+                    SiNo
+                        Escribir " Lametamos no tener la pelicula que desean que tengas un feliz día";
+                    FinSi
+                SiNo
+                    Escribir " La opción elegida no existe";		
+                FinSi
+            2: 
+                Escribir "El origen";
+                Escribir "Ghost: la sombre del amor";
+                Escribir "El conjuro";
+                Escribir "Rápidos y Furiosos 7";
+                
+            3:
+                Escribir "¿La pelicula tiene algun daño o novedad";
+                Escribir "1. si";
+                Escribir "2. no";
+                Leer opcion3;
+                
+                Limpiar Pantalla;
+                
+                Segun opcion3 Hacer
+                    1:
+                        Escribir "Ingresa que novedad presenta";
+                        Leer anotacion;
+                    2:
+                        Escribir "Ingresar pelicula a la lista de disponibles";
+                    De Otro Modo:
+                        Escribir "La opción elegida no existe";
+                FinSegun
+                
+            De Otro Modo:
+                Escribir "La opción elegida no existe";
+                
+                
+    FinSegun
+        
+    
+    FinProceso
+    
+
+    </textarea>
+    <br />
+
+    <h2>Punto 5 Condicionales</h2>
+    <p>
+        La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para poder facturar
+        los productos que vende a sus clientes y para ello, los productos tienen unas características que deben
+        indicársele al cliente para que pueda escoger el producto a comprar. Para cada cliente, se tienen las opciones
+        de compra de producto, consulta de precios por producto y devoluciones en caso de que se presenten.
+    </p>
+    <textarea name="texto" class="mensaje">
+        SubProceso respuesta <- captura(dato)
+        Definir respuesta Como Caracter;
+        Escribir "Ingresa ", dato;
+        Leer respuesta;
+    FinSubProceso
+    
+    SubProceso respuesta1 <- captura1(dato)
+        Definir respuesta1 Como entero;
+        Escribir "Ingresa ", dato;
+        Leer respuesta1;
+    FinSubProceso
+    
+    Proceso DrogueriaApp
+        
+        Definir nombrecompleto Como Caracter;
+        Definir documento Como Entero;
+        Definir celular Como Caracter;
+        Definir direccion Como Caracter;
+        Definir opcion1 Como Entero;
+        Definir opcion2 Como Entero;
+        Definir opcion3 Como Entero;
+        Definir anotacion Como Caracter;
+        
+        Escribir "Elija el medicamento que requiere";
+        Escribir "1. Acetaminofen * 500 mg /100 tabletas ";
+        Escribir "2. Ibuprofeno * 800mg/ 60 tabletas.";
+        Escribir "3. Salbutamol inhalador /frasco * 200 dosis.";
+        Escribir "4. Beclometasona inhalador * 50 mg /frasco * 200 dosis.";
+        Leer opcion1;
+        
+        Limpiar Pantalla;
+        
+        Segun opcion1 Hacer
+            1:
+                Escribir "Acetaminofen * 500 mg /100 tabletas";
+                Escribir "1.Comprar medicamento";
+                Escribir "2.Consultar precio del medicamento";
+                Escribir "3.Devolver el medicamento";
+                Leer opcion2;
+                
+                Limpiar Pantalla;
+                
+                Segun opcion2 Hacer
+                    1:
+                        nombrecompleto<-captura("tu nombre completo.");
+                        documento<-captura1("tu numero de documento sin puntos ni comas.");
+                        celular<-captura("tu numero de celular.");
+                        direccion<-captura("direccion donde llegarian los medicamentos");
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Pedido realizado, valor a pagar $46.800";
+                    2:
+                        
+                        Escribir "El medicamento tiene un valore de $46.800.";
+                    3:
+                        Escribir "Ingresa el motivo por el cual deseas devolver el medicamento";
+                        Leer anotacion;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Su solicitud ha sido ingresada, recuerde que para la devolucion del medicamento este no debe estar abierto";
+                FinSegun
+            2:
+                
+                Escribir "Ibuprofeno * 800mg/ 60 tabletas.";
+                Escribir "1.Comprar medicamento";
+                Escribir "2.Consultar precio del medicamento";
+                Escribir "3.Devolver el medicamento";
+                Leer opcion2;
+                
+                Limpiar Pantalla;
+                
+                Segun opcion2 Hacer
+                    1:
+                        nombrecompleto<-captura("tu nombre completo.");
+                        documento<-captura1("tu numero de documento sin puntos ni comas.");
+                        celular<-captura("tu numero de celular.");
+                        direccion<-captura("direccion donde llegarian los medicamentos");
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Pedido realizado, valor a pagar $19.450";
+                    2:
+                        
+                        Escribir "El medicamento tiene un valore de $19.450.";
+                    3:
+                        Escribir "Ingresa el motivo por el cual deseas devolver el medicamento";
+                        Leer anotacion;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Su solicitud ha sido ingresada, recuerde que para la devolucion del medicamento este no debe estar abierto";
+                FinSegun
+                
+            3:
+                Escribir "Salbutamol inhalador /frasco * 200 dosis.";
+                Escribir "1.Comprar medicamento";
+                Escribir "2.Consultar precio del medicamento";
+                Escribir "3.Devolver el medicamento";
+                Leer opcion2;
+                
+                Limpiar Pantalla;
+                
+                Segun opcion2 Hacer
+                    1:
+                        
+                        nombrecompleto<-captura("tu nombre completo.");
+                        documento<-captura1("tu numero de documento sin puntos ni comas.");
+                        celular<-captura("tu numero de celular.");
+                        direccion<-captura("direccion donde llegarian los medicamentos");
+                        
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Pedido realizado, valor a pagar $10.150";
+                    2:
+                        
+                        Escribir "El medicamento tiene un valore de $10.150";
+                    3:
+                        Escribir "Ingresa el motivo por el cual deseas devolver el medicamento";
+                        Leer anotacion;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Su solicitud ha sido ingresada, recuerde que para la devolucion del medicamento este no debe estar abierto";
+                FinSegun
+            4:
+                Escribir "Beclometasona inhalador * 50 mg /frasco * 200 dosis.";
+                Escribir "1.Comprar medicamento";
+                Escribir "2.Consultar precio del medicamento";
+                Escribir "3.Devolver el medicamento";
+                Leer opcion2;
+                
+                Limpiar Pantalla;
+                
+                Segun opcion2 Hacer
+                    1:
+                        nombrecompleto<-captura("tu nombre completo.");
+                        documento<-captura1("tu numero de documento sin puntos ni comas.");
+                        celular<-captura("tu numero de celular.");
+                        direccion<-captura("direccion donde llegarian los medicamentos");
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Pedido realizado, valor a pagar $38.750";
+                    2:
+                        
+                        Escribir "El medicamento tiene un valore de $38.750";
+                    3:
+                        Escribir "Ingresa el motivo por el cual deseas devolver el medicamento";
+                        Leer anotacion;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Su solicitud ha sido ingresada, recuerde que para la devolucion del medicamento este no debe estar abierto";
+                FinSegun
+        FinSegun
+        
+    FinProceso
+    </textarea>
+    <br />
+    <h2>Punto 6 Condicionales</h2>
+    <p>El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las respectivas
+        revisiones y requiere una aplicación que le permita registrar los servicios generados a sus clientes. Para cada
+        motocicleta se debe tener registro del ingreso al taller y las observaciones por parte del cliente. También debe
+        existir registro de salida del taller con las novedades y otra de arreglos hechos por el mecánico en caso de que
+        se requiera inventariar cambios repuestos en la motocicleta al entregarla.</p>
+    <textarea name="texto" class="mensaje">
+    SubProceso respuesta <- captura(dato)
+        Definir respuesta Como Caracter;
+        Escribir dato;
+        Leer respuesta;
+    FinSubProceso
+    
+    SubProceso respuesta1 <- captura1(dato)
+        Definir respuesta1 Como entero;
+        Escribir dato;
+        Leer respuesta1;
+    FinSubProceso
+    
+    
+    Proceso MotosApp
+        
+        Definir nombredueno Como Caracter;
+        Definir documento Como Entero;
+        Definir celular Como Caracter;
+        Definir marca Como Caracter;
+        Definir cilindraje Como Entero;
+        Definir nombremecanico Como caracter;
+        Definir observacionesingreso Como Caracter;
+        Definir observacionesdesalida Como Caracter;
+        Definir opcion1 Como Entero;
+        Definir opcion2 Como Entero;
+        Definir opcion3 Como Entero;
+        Definir bandera1 Como Logico;
+        Definir bandera2 Como Logico;
+        
+        Escribir "Elije una opción";
+        Escribir "1. Ingresar Motoclicleta ";
+        Escribir "2. Ver observacions de ingreso ";
+        Escribir "3. Ver observaciones de salida";
+        Leer opcion1;
+        
+        
+        bandera1<-Falso;
+        bandera2<-Falso;
+        
+        Limpiar Pantalla;
+        
+        Segun opcion1 Hacer
+            1: 
+                
+                nombredueno<-captura("Ingresar tu nombre completo.");
+                documento<-captura1("Ingresa tu numero de documento sin puntos ni comas.");
+                celular<-captura("Ingresa tu numero de celular.");
+                marca<-captura("Ingresa marca de la moto");
+                cilindraje<-captura1("Ingresa cilindraje de la moto");
+                Escribir "observacion de ingreso de la moto";
+                Leer observacionesingreso;
+                nombremecanico<-captura("Nobres del mecanico al cual fue asignada la moto");
+                bandera1<-Verdadero;
+                
+                Limpiar Pantalla;
+                
+                Escribir "La moto ha sido ingresada";
+                Escribir "Elije una opción";
+                Escribir "1. Ver observacions de ingreso ";
+                Escribir "2 Registrar salida de la moto";
+                Escribir "3. salir de la APP";
+                Leer opcion2;
+                
+                Limpiar Pantalla;
+                
+                Segun opcion2 Hacer
+                    1: 
+                        si bandera1 = Verdadero Entonces
+                            
+                            Escribir "La moto fue asignada al mecanico ", nombremecanico, " y tiene las siguentes observacion por parte del dueño: ", observacionesingreso;
+                        SiNo
+                            
+                            Escribir "No se a ingresado ninguna moto";
+                            
+                            
+                        FinSi
+                    2:
+                        
+                        Escribir  "Nobres del mecanico al cual fue asignada la moto";
+                        Leer nombremecanico;
+                        Escribir "observacion salida de la moto, incluir piesas que se cambiaron";
+                        Leer observacionesdesalida;
+                        bandera2<-Verdadero;
+                        
+                        Limpiar Pantalla;
+                        
+                        Escribir "Elije una opción";
+                        Escribir "1. Ver observaciones de salida";
+                        Escribir "2. salir de la APP";
+                        Leer opcion3;
+                        
+                        Segun opcion3 Hacer
+                            1:
+                                si bandera2 = verdadero entonces
+                                    Escribir "el mecanico ", nombremecanico, " dejo las siguente observaciones entre ellas las piesas que cambio", observacionesdesalida;
+                                SiNo
+                                    Escribir "La moto no se le a realizado registro de salida";
+                                    
+                                FinSi
+                            2:
+                                
+                                Escribir " Muchas gracias por su cofianza, cuando este reparada la moto nos comunicamos con usted";
+                            De Otro Modo:
+                                
+                                Escribir "La opción elegida no existe";
+                            
+                        FinSegun
+                    3:
+                        
+                        Escribir " Muchas gracias por su cofianza cuando este reparada la moto nos comunicamos con usted";
+                        
+                    De Otro Modo:
+                        
+                        Escribir "La opción elegida no existe";
+                        
+                FinSegun
+                
+            2:
+                
+                
+                si bandera1 = Verdadero Entonces
+                    
+                    Escribir "La moto fue asignada al mecanico ", nombremecanico, " y tiene las siguentes observacion por parte del dueño: ", observacionesingreso;
+                SiNo
+                    
+                    Escribir "No se a ingresado ninguna moto";
+                    
+                    
+                FinSi
+            3:
+                
+                
+                si bandera2 = verdadero entonces
+                    Escribir "el mecanico ", nombremecanico, "dejo las siguente observaciones entre ellas las piesas que cambio", observacionesdesalida;
+                SiNo
+                    Escribir "La moto no se le a realizado registro de salida";
+                    
+                FinSi
+                
+            De Otro Modo:
+                
+                Escribir "La opción elegida no existe";
+            
+        FinSegun
+        
+        
+    FinProceso
+    
+    </textarea>
+    <br />
+
+    <h2>Punto 7 Condicionales</h2>
+    <p>
+        La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de masa
+        corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada persona encuestada adicional a
+        los datos suministrados, debe mostrar el resultado para cada uno y establecer en qué rango se encuentra (bajo
+        peso, normal, sobrepeso y obeso).
+    </p>
+    <textarea name="texto" class="mensaje">
+    SubProceso respuesta<-calculo(num1,num2)
+	Definir respuesta Como Real;
+	respuesta<-num1/num2^2;
+    FinSubProceso
+Proceso IndiceDeMasaCorporal
+	
+	Definir nombrecompleto Como Caracter;
+	Definir documento Como Entero;
+	Definir peso Como Real;
+	Definir estatura Como Real;
+	Definir IMC Como Real;
+	
+	Escribir "Ingresa tu nombre completo";
+	Leer nombrecompleto;
+	
+	Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+	Leer documento;
+	
+	Escribir "Ingresa tu peso en kilogramos";
+	Leer peso;
+	
+	Escribir "Ingresa tu estatura en metros";
+	Leer estatura;
+	
+	IMC<-calculo(peso,estatura);
+	
+	si IMC <= 18.5 Entonces
+		Escribir nombrecompleto, " con Documento numero:", documento, " su peso es de ", peso, " kg y su estatura es de ", estatura, " metros su índice de masa corparal arroja que se encuntra bajo de peso";
+	FinSi
+	si (IMC > 18.5) y (IMC <= 24.99) Entonces
+		Escribir nombrecompleto, " con Documento numero:", documento, " su peso es de ", peso, " kg y su estatura es de ", estatura, " metros suíndice de masa corparal arroja que se encuntra en un peso normal";
+	FinSi
+	si (IMC >= 25.0) y (IMC <= 29.99) Entonces
+		Escribir nombrecompleto, " con Documento numero:", documento, " su peso es de ", peso, " kg y su estatura es de ", estatura, " metros su índice de masa corparal arroja que se encuntra en sobre peso";
+	FinSi
+	si IMC > 30.0 Entonces
+		Escribir nombrecompleto, " con Documento numero:", documento, " su peso es de ", peso, " kg y su estatura es de ", estatura, "metros su índice de masa corparal arroja que tiene obesidad";
+	FinSi
+	
+	
+FinProceso
+
+
+    </textarea>
+    <br />
+
+    <h2>Punto 8 Condicionales</h2>
+    <p>
+        El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le permita registrar
+        los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene unas características propias
+        como sabor, cantidad (porciones) y decoraciones). Se requiere que la aplicación permita registrar los pedidos,
+        las tortas disponibles y las ventas que se registren diariamente.
+    </p>
+    <textarea name="texto" class="mensaje">
+        SubProceso respuesta <- captura(dato)
+        Definir respuesta Como real;
+        respuesta<-dato+88600;
+    FinSubProceso
+    Proceso PasteleriaApp
+        
+        Definir nombrecompleto Como Caracter;
+        Definir documento Como Entero;
+        Definir celular Como Entero;
+        Definir direccion Como Caracter;
+        Definir pedido Como Caracter;
+        Definir opcion1 Como Entero;
+        Definir opcion2 Como Entero;
+        Definir opcion3 Como Entero;
+        Definir con1 Como Entero;
+        Definir con2 Como Entero;
+        Definir conv Como Entero;
+        Definir cont Como real;
+        
+        con1<-2;
+        con2<-2;
+        conv<-0;
+        cont<-0;
+        
+        
+        
+        Escribir "Elije una opción";
+        Escribir "1. Registrar Pedido ";
+        Escribir "2. Tortas Disponibles ";
+        Escribir "3. Venta Diaria";
+        Leer opcion1;
+        Limpiar Pantalla;
+        
+        Segun opcion1 Hacer
+            1:
+                si conv <= 4 Entonces
+                    Escribir "Ingresar tu nombre completo.";
+                    Leer nombrecompleto;
+                    Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                    Leer documento;
+                    Escribir "Ingresa tu numero de celular.";
+                    Leer celular;
+                    Escribir "Ingresa direccion donde llegarian el producto";
+                    Leer direccion;
+                    Escribir "Ingresar pedido";
+                    Escribir "1. Torta Pasión de Chocolate";
+                    Escribir "2. Torta de Maracuya ";
+                    Leer opcion2;
+                    Limpiar Pantalla;
+                    Segun opcion2 Hacer
+                        1:
+                            si (con1 <= 2) y (con1 <>0 )Entonces
+                                Escribir " El pedido ha quedo registrado";
+                                con1<-con1-1;
+                                conv<-conv+1;
+                                cont<-captura(cont);
+                                
+                            SiNo
+                                Escribir " Esta torta ya no esta disponible";
+                            FinSi
+                            
+                            Escribir "Elije una opción";
+                            Escribir "1. Registrar Pedido ";
+                            Escribir "2. Tortas Disponibles ";
+                            Escribir "3. Venta Diaria";
+                            Leer opcion1;
+                            
+                            Limpiar Pantalla;
+                            
+                            Segun opcion1 Hacer
+                                1:
+                                    si conv <= 4 Entonces
+                                        
+                                        Escribir "Ingresar tu nombre completo.";
+                                        Leer nombrecompleto;
+                                        Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                                        Leer documento;
+                                        Escribir "Ingresa tu numero de celular.";
+                                        Leer celular;
+                                        Escribir "Ingresa direccion donde llegarian el producto";
+                                        Leer direccion;
+                                        Escribir "Ingresar pedido";
+                                        Escribir "1. Torta Pasión de Chocolate";
+                                        Escribir "2. Torta de Maracuya ";
+                                        Leer opcion2;
+                                        Limpiar Pantalla;
+                                        segun opcion2 Hacer
+                                            1:
+                                                si (con1 <= 2) y (con1 <>0 ) Entonces
+                                                    Escribir " El pedido ha quedo registrado";
+                                                    con1<-con1-1;
+                                                    conv<-conv+1;
+                                                    cont<-captura(cont);
+                                                SiNo
+                                                    Escribir " Esta torta ya no esta disponible";
+                                                FinSi
+                                                
+                                                
+                                                Escribir "Elije una opción";
+                                                Escribir "1. Registrar Pedido ";
+                                                Escribir "2. Tortas Disponibles ";
+                                                Escribir "3. Venta Diaria";
+                                                Leer opcion1;
+                                                Limpiar Pantalla;
+                                                
+                                                segun opcion1 hacer
+                                                    1:
+                                                        si conv <= 4 Entonces
+                                                            Escribir "Ingresar tu nombre completo.";
+                                                            Leer nombrecompleto;
+                                                            Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                                                            Leer documento;
+                                                            Escribir "Ingresa tu numero de celular.";
+                                                            Leer celular;
+                                                            Escribir "Ingresa direccion donde llegarian el producto";
+                                                            Leer direccion;
+                                                            Escribir "Ingresar pedido";
+                                                            Escribir "1. Torta Pasión de Chocolate";
+                                                            Escribir "2. Torta de Maracuya ";
+                                                            Leer opcion2;
+                                                            Limpiar Pantalla;
+                                                            segun opcion2 Hacer
+                                                                1:
+                                                                    si (con1 <= 2) y (con1 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con1<-con1-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-captura(cont);
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                2:
+                                                                    
+                                                                    si (con2 <= 2) y (con2 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con2<-con2-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-captura(cont);
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                    
+                                                                De Otro Modo:
+                                                                    
+                                                                    Escribir "La opción elegida no existe";	
+                                                            FinSegun
+                                                        SiNo
+                                                            Escribir " ya no hay tortas disponibles";
+                                                            
+                                                        FinSi
+                                                        
+                                                    2:
+                                                        Escribir "cantidad ", con1, " Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                                                        Escribir "cantidad ", con2, " Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+                                                    3:
+                                                        Escribir " hoy has vedido ", conv, " valor total vendido $", cont;
+                                                    De Otro Modo:
+                                                        
+                                                        Escribir "La opción elegida no existe";		
+                                                FinSegun
+                                                
+                                            2:
+                                                si (con2 <= 2) y (con2 <>0 ) Entonces
+                                                    Escribir " El pedido ha quedo registrado";
+                                                    con2<-con2-1;
+                                                    conv<-conv+1;
+                                                    cont<-captura(cont);
+                                                SiNo
+                                                    Escribir " Esta torta ya no esta disponible";
+                                                FinSi
+                                            
+                                                
+                                                Escribir "Elije una opción";
+                                                Escribir "1. Registrar Pedido ";
+                                                Escribir "2. Tortas Disponibles ";
+                                                Escribir "3. Venta Diaria";
+                                                Leer opcion1;
+                                                Limpiar Pantalla;
+                                                
+                                                segun opcion1 hacer
+                                                    1:
+                                                        
+                                                        si conv <= 4 Entonces
+                                                            Escribir "Ingresar tu nombre completo.";
+                                                            Leer nombrecompleto;
+                                                            Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                                                            Leer documento;
+                                                            Escribir "Ingresa tu numero de celular.";
+                                                            Leer celular;
+                                                            Escribir "Ingresa direccion donde llegarian el producto";
+                                                            Leer direccion;
+                                                            Escribir "Ingresar pedido";
+                                                            Escribir "1. Torta Pasión de Chocolate";
+                                                            Escribir "2. Torta de Maracuya ";
+                                                            Leer opcion2;
+                                                            Limpiar Pantalla;
+                                                            segun opcion2 Hacer
+                                                                1:
+                                                                    si (con1 <= 2) y (con1 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con1<-con1-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-captura(cont);
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                2:
+                                                                    
+                                                                    si (con2 <= 2) y (con2 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con2<-con2-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-captura(cont);
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                    
+                                                                De Otro Modo:
+                                                                    
+                                                                    Escribir "La opción elegida no existe";	
+                                                            FinSegun
+                                                        SiNo
+                                                            Escribir " ya no hay tortas disponibles";
+                                                            
+                                                        FinSi
+                                                        
+                                                    2:
+                                                        Escribir "cantidad ", con1, " Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                                                        Escribir "cantidad ", con2, " Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+                                                    3:
+                                                        Escribir " hoy has vedido ", conv, " valor total vendido $", cont;
+                                                    De Otro Modo:
+                                                        
+                                                        Escribir "La opción elegida no existe";		
+                                                FinSegun
+                                                
+                                            De Otro Modo:
+                                                
+                                                Escribir "La opción elegida no existe";		
+                                        FinSegun
+                                        
+                                        
+                                        
+                                    sino
+                                        Escribir " ya no hay tortas disponibles";
+                                    FinSi
+                                2:
+                                    Escribir "cantidad ", con1, " Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                                    Escribir "cantidad ", con2, " Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+                                    
+                                3:
+                                    Escribir " hoy has vedido ", conv, "valor total vendido $", cont;
+                                De Otro Modo:
+                                    Escribir "La opción elegida no existe";
+                                    
+                                    
+                                
+                            FinSegun
+                            
+                            
+                            
+                        2:
+                            
+                            si (con2 <= 2) y (con2 <> 0 ) Entonces
+                                Escribir " El pedido ha quedo registrado";
+                                con2<-con2-1;
+                                conv<-conv+1;
+                                cont<-captura(cont);
+                            SiNo
+                                Escribir " Esta torta ya no esta disponible";
+                            FinSi
+                            
+                            Escribir "Elije una opción";
+                            Escribir "1. Registrar Pedido ";
+                            Escribir "2. Tortas Disponibles ";
+                            Escribir "3. Venta Diaria";
+                            Leer opcion1;
+                            Limpiar Pantalla;
+                            Segun opcion1 Hacer
+                                1:
+                                    si conv <= 4 Entonces
+                                        
+                                        Escribir "Ingresar tu nombre completo.";
+                                        Leer nombrecompleto;
+                                        Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                                        Leer documento;
+                                        Escribir "Ingresa tu numero de celular.";
+                                        Leer celular;
+                                        Escribir "Ingresa direccion donde llegarian el producto";
+                                        Leer direccion;
+                                        Escribir "Ingresar pedido";
+                                        Escribir "1. Torta Pasión de Chocolate";
+                                        Escribir "2. Torta de Maracuya ";
+                                        Leer opcion2;
+                                        Limpiar Pantalla;
+                                        segun opcion2 Hacer
+                                            1:
+                                                si (con1 <= 2) y (con1 <>0 ) Entonces
+                                                    Escribir " El pedido ha quedo registrado";
+                                                    con1<-con1-1;
+                                                    conv<-conv+1;
+                                                    cont<-captura(cont);
+                                                SiNo
+                                                    Escribir " Esta torta ya no esta disponible";
+                                                FinSi
+                                                
+                                                
+                                                
+                                                Escribir "Elije una opción";
+                                                Escribir "1. Registrar Pedido ";
+                                                Escribir "2. Tortas Disponibles ";
+                                                Escribir "3. Venta Diaria";
+                                                Leer opcion1;
+                                                Limpiar Pantalla;
+                                                segun opcion1 hacer
+                                                    1:
+                                                        si conv <= 4 Entonces
+                                                            Escribir "Ingresar tu nombre completo.";
+                                                            Leer nombrecompleto;
+                                                            Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                                                            Leer documento;
+                                                            Escribir "Ingresa tu numero de celular.";
+                                                            Leer celular;
+                                                            Escribir "Ingresa direccion donde llegarian el producto";
+                                                            Leer direccion;
+                                                            Escribir "Ingresar pedido";
+                                                            Escribir "1. Torta Pasión de Chocolate";
+                                                            Escribir "2. Torta de Maracuya ";
+                                                            Leer opcion2;
+                                                            Limpiar Pantalla;
+                                                            segun opcion2 Hacer
+                                                                1:
+                                                                    si (con1 <= 2) y (con1 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con1<-con1-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-captura(cont);
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                2:
+                                                                    
+                                                                    si (con2 <= 2) y (con2 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con2<-con2-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-captura(cont);
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                    
+                                                                De Otro Modo:
+                                                                    
+                                                                    Escribir "La opción elegida no existe";	
+                                                            FinSegun
+                                                        SiNo
+                                                            Escribir " ya no hay tortas disponibles";
+                                                            
+                                                        FinSi
+                                                        
+                                                    2:
+                                                        Escribir "cantidad ", con1, " Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                                                        Escribir "cantidad ", con2, " Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+                                                    3:
+                                                        Escribir " hoy has vedido ", cont, " valor total vendido $", cont;
+                                                        
+                                                    De Otro Modo:
+                                                        
+                                                        Escribir "La opción elegida no existe";	
+                                                FinSegun
+                                                
+                                            2:
+                                                si (con2 <= 2) y (con2 <>0 ) Entonces
+                                                    Escribir " El pedido ha quedo registrado";
+                                                    con2<-con2-1;
+                                                    conv<-conv+1;
+                                                    cont<-captura(cont);
+                                                SiNo
+                                                    Escribir " Esta torta ya no esta disponible";
+                                                FinSi
+                                                
+                                                
+                                                
+                                                Escribir "Elije una opción";
+                                                Escribir "1. Registrar Pedido ";
+                                                Escribir "2. Tortas Disponibles ";
+                                                Escribir "3. Venta Diaria";
+                                                Leer opcion1;
+                                                Limpiar Pantalla;
+                                                segun opcion1 hacer
+                                                    1:
+                                                        si conv <= 4 Entonces
+                                                            Escribir "Ingresar tu nombre completo.";
+                                                            Leer nombrecompleto;
+                                                            Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+                                                            Leer documento;
+                                                            Escribir "Ingresa tu numero de celular.";
+                                                            Leer celular;
+                                                            Escribir "Ingresa direccion donde llegarian el producto";
+                                                            Leer direccion;
+                                                            Escribir "Ingresar pedido";
+                                                            Escribir "1. Torta Pasión de Chocolate";
+                                                            Escribir "2. Torta de Maracuya ";
+                                                            Leer opcion2;
+                                                            Limpiar Pantalla;
+                                                            segun opcion2 Hacer
+                                                                1:
+                                                                    si (con1 <= 2) y (con1 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con1<-con1-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-captura(cont);
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                2:
+                                                                    
+                                                                    si (con2 <= 2) y (con2 <>0 ) Entonces
+                                                                        Escribir " El pedido ha quedo registrado";
+                                                                        con2<-con2-1;
+                                                                        conv<-conv+1;
+                                                                        cont<-captura(cont);
+                                                                    SiNo
+                                                                        Escribir " Esta torta ya no esta disponible";
+                                                                    FinSi
+                                                                    
+                                                                    
+                                                                De Otro Modo:
+                                                                    
+                                                                    Escribir "La opción elegida no existe";	
+                                                            FinSegun
+                                                        SiNo
+                                                            Escribir " ya no hay tortas disponibles";
+                                                            
+                                                        FinSi
+                                                        
+                                                    2:
+                                                        Escribir "cantidad ", con1, " Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                                                        Escribir "cantidad ", con2, " Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+                                                    3:
+                                                        Escribir " hoy has vedido ", cont, " valor total vendido $", cont;
+                                                    De Otro Modo:
+                                                        
+                                                        Escribir "La opción elegida no existe";		
+                                                FinSegun
+                                                
+                                                
+                                                
+                                            De Otro Modo:
+                                                
+                                                Escribir "La opción elegida no existe";	
+                                        FinSegun
+                                        
+                                    sino
+                                        Escribir " ya no hay tortas disponibles";
+                                    FinSi
+                                2:
+                                    Escribir "cantidad ", con1, " Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                                    Escribir "cantidad ", con2, " Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+                                3:
+                                    Escribir " hoy has vedido ", cont, " valor total vendido $", cont;
+                                    
+                                De Otro Modo:
+                                    
+                                    Escribir "La opción elegida no existe";	
+                            FinSegun
+                            
+                        De Otro Modo:
+                            
+                            Escribir "La opción elegida no existe";		
+                    FinSegun
+                    
+                    
+                    
+                    
+                    
+                SiNo
+                    Escribir " ya no hay tortas disponibles";
+                FinSi
+                
+            2:
+                Escribir "cantidad 2 - Torta Pasión de Chocolate Suave y esponjoso bizcochuelo de chocolate relleno con una exquisita crema de chocolate, cubierta con crema chantilly, chocolate y fresas, 20 porciones valor de $88.600";
+                Escribir "cantidad 2 - Torta de Maracuya Esponjosito bizcochuelo de vainilla, con crema chantilly, una exquisita crema de maracuyá y gotas de chocolate 20 porciones valor de $88.600";
+            3:
+                Escribir " Aun no se ha hecho ningun pedido";
+                
+            De Otro Modo:
+                
+                Escribir "La opción elegida no existe";	
+                
+            FinSegun
+        
+        
+    FinProceso
+    
+
+    </textarea>
+    <br />
+
+    <h2>Punto 9 Condicionales</h2>
+    <p>
+        El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de diferentes
+        figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio solicitándole los valores al
+        estudiante. La aplicación debe permitir que el estudiante seleccione si desea calcular el área de un rectángulo,
+        triángulo o trapecio. No olvide solicitar los datos necesarios para realizar cada cálculo y mostrar su
+        respectivo resultado.
+    </p>
+    <textarea name="texto" class="mensaje">
+        SubProceso respuesta<-arear(num1,num2)
+        Definir respuesta Como Real;
+        respuesta<-num1*num2;
+    FinSubProceso
+    
+    SubProceso respuesta<-areatri(b,a)
+        Definir respuesta Como Real;
+        respuesta<-(b*a)/2;
+    FinSubProceso
+    
+    SubProceso respuesta<-areatra(b1,b2,a)
+        Definir respuesta Como Real;
+        respuesta<-((b1+b2)*a)/2;
+    FinSubProceso
+    
+    Proceso GeoApp
+        
+        Definir base1 Como Real;
+        Definir base2 Como Real;
+        Definir altura Como Real;
+        Definir area Como Real;
+        Definir area1 Como Real;
+        Definir area2 Como Real;
+        Definir opcion1 Como Entero;
+        
+        Escribir "Elije el area que deseas calcular";
+        Escribir "1. Rectángulo";
+        Escribir "2. Triángulo ";
+        Escribir "3. Trapecio";
+        Leer opcion1;
+        
+        Segun opcion1 Hacer
+            1:
+                Escribir "Ingresa la base del rectángulo";
+                Leer base1;
+                Escribir "ingresa la altura del rectángulo";
+                Leer altura;
+                area<-arear(base1,altura);
+                Escribir "EL área del rectángulo es: ", area;
+            2:
+                Escribir "Ingrasa la base del triángulo";
+                Leer base1;
+                Escribir "ingresa la altura del triángulo ";
+                Leer altura;
+                area1<-areatri(base1,altura);
+                Escribir "EL área del triángulo es: ", area1;
+            3:
+                Escribir "Ingrasa la base1 del trapecio";
+                Leer base1;
+                Escribir "Ingrasa la base2 del trapecio";
+                Leer base2;
+                Escribir "ingresa la altura del trapecio ";
+                Leer altura;
+                area2<-areatra(base1,base2,altura);
+                Escribir "EL área del trapecio es: ", area2;
+                
+        FinSegun
+        
+    FinProceso
+    </textarea>
+    <br />
+
+    <h2>Punto 10 Condicionales</h2>
+    <p>
+        El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una aplicación para
+        llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga los atributos titular y
+        cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros o consultas de valor. En los
+        ingresos no se pueden insertar valores negativos y para los retiros el valor no puede ser mayor al valor que
+        tiene en la cuenta.
+    </p>
+    <textarea name="texto" class="mensaje">
+        SubProceso  saldoFinal <- validarValorIngresado ( valorIngresado, saldo )
+	Definir saldoFinal Como Entero;
+	si valorIngresado < 0 Entonces
+		Escribir "No es permitido ingresar valores negativos ";
+	SiNo
+		saldoFinal <- saldo + valorIngresado;
+		Escribir "la cantidad de: $", valorIngresado, " fue ingresado correctamente a su cuenta" ;
+	FinSi
+FinSubProceso
+
+SubProceso saldoFinal <-  validarSaldo ( valorIngresado, saldo)
+	Definir saldoFinal Como Entero;
+	SI valorIngresado > saldo Entonces
+		Escribir "Valor ingresado mayor a saldo actual, no se pudo realizar transaccion";
+	SiNo
+		saldoFinal <- saldo - valorIngresado;
+		Escribir "la cantidad de: $", valorIngresado, " fue retirado correctamente a su cuenta" ;
+		Escribir "Su saldo actual es de: $", saldoFinal ;
+	FinSi
+FinSubProceso
+
+Proceso BancoFielApp
+	Definir nombreCliente Como Caracter;
+	Definir documento Como Entero;
+	Definir numeroCuenta Como Entero;
+	Definir valorIngresado como Real;
+	Definir saldo Como Real;
+	Definir opcion1 Como Entero;
+	Definir opcion2 Como Entero;
+	Definir opcion3 Como Entero;
+	
+	
+	Escribir "Elije una opción";
+	Escribir "1. Ingresar a la aplicacion ";
+	Escribir "2. Salir ";
+	Leer opcion1;
+	
+	Limpiar Pantalla;
+	
+	Segun opcion1 Hacer
+		1: 
+			
+			Escribir "Ingresar tu nombre completo.";
+			Leer nombreCliente;
+			Escribir "Ingresa tu numero de documento sin puntos ni comas.";
+			Leer documento;
+			Escribir "Ingresa tu numero de cuenta.";
+			Leer numeroCuenta;		
+			saldo <- 0;
+			Limpiar Pantalla;
+			
+			Escribir "El cliente ha sido ingresado correctamente";
+			Escribir "Elije una opción";
+			Escribir "1. Ingresar dinero a la cuenta";
+			Escribir "2 Retirar dinero de la cuenta";
+			Escribir "3. Consultar saldo";
+			Escribir "4. Salida Segura";
+			Leer opcion2;
+			
+			Limpiar Pantalla;
+			
+			Segun opcion2 Hacer
+				1: 
+					Escribir "1. Ingresar dinero a la cuenta";
+					Escribir "Ingrese el valor a ingresar: ";
+					leer valorIngresado;
+					saldo <- validarValorIngresado(valorIngresado, saldo);
+					Escribir "Elije una opción";
+					Escribir "1. Ingresar dinero a la cuenta";
+					Escribir "2 Retirar dinero de la cuenta";
+					Escribir "3. Consultar saldo";
+					Leer opcion2;
+					
+					Segun opcion2 Hacer
+						1:
+							Escribir "1. Ingresar dinero a la cuenta";
+							Escribir "Ingrese el valor a ingresar: ";
+							leer valorIngresado;
+							saldo <- validarValorIngresado(valorIngresado, saldo);
+							Escribir "Elije una opción";
+							Escribir "1. Ingresar dinero a la cuenta";
+							Escribir "2 Retirar dinero de la cuenta";
+							Escribir "3. Consultar saldo";
+							Leer opcion2;
+							
+							Segun opcion2 Hacer
+								1:
+									Escribir "1. Ingresar dinero a la cuenta";
+									Escribir "Ingrese el valor a ingresar: ";
+									leer valorIngresado;
+									saldo <- validarValorIngresado(valorIngresado, saldo);
+								2: 
+									Escribir "2. Retirar dinero de la cuenta";
+									Escribir "Ingrese el valor a retirar: ";
+									leer valorIngresado;
+									saldo <- validarSaldo(valorIngresado, saldo);
+								3:
+									Escribir "3. Consultar saldo";
+									Escribir "Su saldo actual es de: $", saldo ;
+							FinSegun
+						2: 
+							Escribir "2. Retirar dinero de la cuenta";
+							Escribir "Ingrese el valor a retirar: ";
+							leer valorIngresado;
+							saldo <- validarSaldo(valorIngresado, saldo);
+							Escribir "Elije una opción";
+							Escribir "1. Ingresar dinero a la cuenta";
+							Escribir "2 Retirar dinero de la cuenta";
+							Escribir "3. Consultar saldo";
+							Leer opcion2;
+							
+							Segun opcion2 Hacer
+								1:
+									Escribir "1. Ingresar dinero a la cuenta";
+									Escribir "Ingrese el valor a ingresar: ";
+									leer valorIngresado;
+									saldo <- validarValorIngresado(valorIngresado, saldo);
+								2: 
+									Escribir "2. Retirar dinero de la cuenta";
+									Escribir "Ingrese el valor a retirar: ";
+									leer valorIngresado;
+									saldo <- validarSaldo(valorIngresado, saldo);
+								3:
+									Escribir "3. Consultar saldo";
+									Escribir "Su saldo actual es de: $", saldo ;
+							FinSegun
+						3:
+							Escribir "3. Consultar saldo";
+							Escribir "Su saldo actual es de: $", valorIngresado ;
+							Escribir "Elije una opción";
+							Escribir "1. Ingresar dinero a la cuenta";
+							Escribir "2 Retirar dinero de la cuenta";
+							Escribir "3. Consultar saldo";
+							Leer opcion2;
+							
+							Segun opcion2 Hacer
+								1:
+									Escribir "1. Ingresar dinero a la cuenta";
+									Escribir "Ingrese el valor a ingresar: ";
+									leer valorIngresado;
+									saldo <- validarValorIngresado(valorIngresado, saldo);
+								2: 
+									Escribir "2. Retirar dinero de la cuenta";
+									Escribir "Ingrese el valor a retirar: ";
+									leer valorIngresado;
+									saldo <- validarSaldo(valorIngresado, saldo);
+								3:
+									Escribir "3. Consultar saldo";
+									Escribir "Su saldo actual es de: $", saldo ;
+							FinSegun
+					FinSegun
+				2: 
+					Escribir "2. Retirar dinero de la cuenta";
+					Escribir "Ingrese el valor a retirar: ";
+					leer valorIngresado;
+					
+					SI valorIngresado > saldo Entonces
+						Escribir "Valor ingresado mayor a saldo actual, no se pudo realizar transaccion";
+					SiNo
+						saldo <- saldo - valorIngresado;
+						Escribir "la cantidad de: $", valorIngresado, " fue retirado correctamente a su cuenta" ;
+						Escribir "Su saldo actual es de: $", valorIngresado ;
+					FinSi
+					
+				3:
+					Escribir "3. Consultar saldo";
+					Escribir "Su saldo actual es de: $", saldo ;
+				4:
+					Escribir "Salida Segura";
+			FinSegun
+		2:
+			Escribir "Ha salido con exito ";
+	FinSegun
+	
+	
+FinProceso
+
+    </textarea>
+    <br />
+    <h2>Punto 1 Arreglos</h2>
+    <p>Crear un vector de tipo Entero con 5 posiciones, llenarlo con información solicitada al usuario. Después de recoger toda la información, se requiere imprimir el índice de cada posición en el arreglo con su valor de la siguiente manera:</p>
+    <textarea name="texto" class="mensaje">
+        SubProceso respuesta1 <- captura1()
+        Definir respuesta1 Como entero;
+        Escribir "ingresa un número";
+        Leer respuesta1;
+    FinSubProceso
+    Proceso Punto1
+        Definir num, i Como Entero;
+        Dimension num[5];
+        para i <- 0 Hasta 4 Con Paso 1 Hacer
+            num[i]<-captura1;
+        FinPara
+        Limpiar Pantalla;
+        i<-0;
+        Mientras i <= 4 Hacer
+            Escribir "[", i ,"]", " = ", num[i]; 
+            i<-i+1;
+        FinMientras
+        
+         
+    FinProceso
+    
+    </textarea>
+    <br />
+
+    <h2>Punto 2 Arreglos</h2>
+    <p>
+        Crear un arreglo de números enteros de 20 posiciones, el cual, debe ser llenado con números aleatorios entre 1 y 100; después de haber llenado dicho arreglo, se debe volver a recorrer utilizando un ciclo diferente al que se usó para llenarse e imprimir los números pares e impares. 
+        Ejemplo
+        Números pares: 2, 4, 6, 8, 10
+        Números impares: 1, 3, 5, 7, 9
+    </p>
+    <textarea name="texto" class="mensaje">
+        SubProceso par(dato)
+        si dato mod 2 = 0 Entonces
+            Escribir Sin Saltar dato, ",";
+        FinSi
+    FinSubProceso
+    
+    SubProceso impar(dato)
+        si dato mod 2 <> 0 Entonces
+            Escribir Sin Saltar dato, ",";
+        FinSi
+        
+    FinSubProceso
+    
+    
+    
+    Proceso Punto2
+        Definir num, i, j Como Entero;
+        Dimension num[20];
+        j<-0;
+        Escribir "Numeros aleatorios";
+        para i <- 0 Hasta 19 Con Paso 1 Hacer
+            j<-Aleatorio(1,100);
+            num[i]<-j;
+            Escribir Sin Saltar num[i],", ";
+        FinPara
+        i<-0;
+        Escribir "";
+        Escribir "Numeros pares";
+        Mientras i <= 19 Hacer
+            par(num[i]);
+            i<-i+1;
+        FinMientras
+        i<-0;
+        Escribir "";
+        Escribir "Numeros impares";
+        Mientras i <= 19 Hacer
+            impar(num[i]);
+            i<-i+1;
+        FinMientras
+        
+    FinProceso
+    
+    </textarea>
+    <br />
+
+    <h2>Punto 3 Arreglo</h2>
+    <p>
+        Imprimir los números primos del 1 al 1000, el resultado debe ser buscado de forma matemática.
+    </p>
+    <textarea name="texto" class="mensaje">
+        SubProceso primo(dato,num)
+        si dato = 2 Entonces
+            Escribir Sin Saltar num, ", ";
+        FinSi
+    FinSubProceso
+    
+    Proceso Punto3
+        Definir num,i,cont Como Entero;
+        num<-1;
+        Escribir "Numeros primos del 1 al 1000";
+        Mientras num<=1000 Hacer
+            cont <- 0;
+            si num >= 1 Entonces
+                para i<-1 Hasta num Con Paso 1 Hacer
+                    si num mod i = 0 Entonces
+                        cont <- cont+1;
+                    FinSi
+                FinPara
+                primo(cont,num);
+            FinSi
+            num<-num+1;
+        FinMientras
+    
+    FinProceso
+    
+    </textarea>
+    <br />
+
+    <h2>Punto 5 Arreglos</h2>
+    <p>
+        El usuario deberá insertar la fila y columna de la cual desea ver el resultado, el resultado de cada celda debe estar previamente calculado en una matriz bidimensional la cual cada resultado obedecerá a la fila y columna insertada por el usuario.
+    </p>
+    <textarea name="texto" class="mensaje">
+    SubProceso respuesta1 <- mult(a,b)
+        Definir respuesta1 Como entero;
+        respuesta1<-a*b;
+    FinSubProceso
+    
+    Proceso Punto5
+        Definir fila,columna,a,k,t,matriz,f,c Como Entero;
+        Dimension matriz[10,10];
+        a<-1;
+        
+        Escribir "                                                 Columna";
+        Escribir "Fila     0        1        2        3        4        5        6        7        8        9 ";
+    
+        para fila<-0 hasta 9 Con Paso 1 Hacer
+            k<-1;
+            para columna<-0 Hasta 9 Con Paso 1 Hacer
+                si columna = 0 Entonces
+                    Escribir "  ",fila, "    ", k, " * ", a,"  ", sin saltar;
+                    t<-mult(k,a);
+                    matriz[fila,columna] <- t;
+                    k<-k+1;
+                SiNo
+                    Escribir "  ", k," * ", a,"  ", sin saltar;
+                    t<-mult(k,a);
+                    matriz[fila,columna] <- t;
+                    k<-k+1;
+                FinSi
+                
+                
+            FinPara
+            Escribir " ";
+            a<-a+1;
+        FinPara
+        
+        
+        
+        Escribir "ingrese fila";
+        leer f;
+        Escribir "ingrese columna";
+        leer c;
+        Escribir "Resultado: ", matriz[f,c];
+        
+        
+    </textarea>
+    <br />
+
+    <h2>Punto 6 Ciclos</h2>
+    <p>
+        Se está creando una aplicación que va a estar conectada con un prototipo
+        que permita almacenar contactos telefónicos en el dispositivo. Para ello
+        cada contacto debe contener nombre completo, teléfono y organización. Se
+        requiere que la aplicación permita añadir 3 contactos verificando que el
+        número no esté almacenado, buscar contactos almacenados y eliminar
+        contactos si el usuario lo requiere. Recuerde que el sistema debe terminar
+        cuando el usuario así lo indique.
+    </p>
+    <textarea name="texto" class="mensaje">
+        SubProceso respuesta <- captura(dato)
+        Definir respuesta Como Caracter;
+        Escribir "Ingresa ", dato;
+        Leer respuesta;
+    FinSubProceso
+    
+    SubProceso respuesta1 <- captura1(dato)
+        Definir respuesta1 Como entero;
+        Escribir "Ingresa ", dato;
+        Leer respuesta1;
+    FinSubProceso
+    
+    
+    Proceso Punto6
+        Definir telefono, telefono1, telefono2, telefono3, i, contador Como Entero;
+        Definir nombreCompleto, nombreCompleto1, nombreCompleto2, nombreCompleto3, organizacion, organizacion1, organizacion2, organizacion3 Como Caracter;
+        Definir opcionElegida, opcionEliminar Como Entero;
+        Definir bandera1, bandera2, bandera3 Como Logico;
+        
+        telefono1 <- 0;
+        telefono2 <- 0;
+        telefono3 <- 0;
+        contador <- 0;
+        nombreCompleto1 <- "";
+        nombreCompleto2 <- "";
+        nombreCompleto3 <- "";
+        organizacion1 <- "";
+        organizacion2 <- "";
+        organizacion3 <- "";
+        bandera1 <- Falso;
+        bandera2 <- Falso;
+        bandera3 <- Falso;
+        Escribir "Elije una opción";
+        Escribir "1. Agregar contacto ";
+        Escribir "2. Buscar contactos almacenados";
+        Escribir "3. Eliminar contacto";
+        Escribir "0. Salir ";
+        Leer opcionElegida;
+        Limpiar Pantalla;
+        Mientras opcionElegida <>	0 Hacer
+            Segun opcionElegida Hacer
+                1:
+                    si contador <= 3 Entonces
+                        Escribir "Opcion escogida: 1. Agregar contacto ";
+                        Para i<-1 Hasta 3 Con Paso 1 Hacer
+                            si bandera1 = Falso o bandera2 = Falso o bandera3 = Falso Entonces
+                                nombreCompleto<-captura("nombre completo del contacto numero: ");
+                                telefono<-captura1("Telefono del contacto: ");
+                                organizacion<-captura("organizacion del contacto: ");
+                            FinSi
+                            Limpiar Pantalla;
+                            
+                            si bandera1 = Falso Entonces
+                                si telefono <> telefono1 Entonces
+                                    si telefono <> telefono2 Entonces
+                                        si telefono <> telefono3 Entonces
+                                            nombreCompleto1<-nombreCompleto;
+                                            telefono1 <- telefono;
+                                            organizacion1 <- organizacion;
+                                            contador <- contador + 1;
+                                            bandera1 <- Verdadero;
+                                        SiNo
+                                            Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                            i <- i -1;
+                                        FinSi
+                                    SiNo
+                                        Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                        i <- i -1;
+                                    FinSi
+                                SiNo
+                                    Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                    i <- i -1;
+                                FinSi
+                            SiNo
+                                si bandera2 = Falso Entonces
+                                    si telefono <> telefono1 Entonces
+                                        si telefono <> telefono2 Entonces
+                                            si telefono <> telefono3 Entonces
+                                                nombreCompleto2<-nombreCompleto;
+                                                telefono2 <- telefono;
+                                                organizacion2 <- organizacion;
+                                                contador <- contador + 1;
+                                                bandera2 <- Verdadero;
+                                            SiNo
+                                                Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                                i <- i -1;
+                                            FinSi
+                                        SiNo
+                                            Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                            i <- i -1;
+                                        FinSi
+                                    SiNo
+                                        Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                        i <- i -1;
+                                    FinSi
+                                SiNo
+                                    si bandera3 = Falso Entonces
+                                        si telefono <> telefono1 Entonces
+                                            si telefono <> telefono2 Entonces
+                                                si telefono <> telefono3 Entonces
+                                                    nombreCompleto3<-nombreCompleto;
+                                                    telefono3 <- telefono;
+                                                    organizacion3 <- organizacion;
+                                                    contador <- contador + 1;
+                                                    bandera3 <- Verdadero;
+                                                SiNo
+                                                    Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                                    i <- i -1;
+                                                FinSi
+                                            SiNo
+                                                Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                                i <- i -1;
+                                            FinSi
+                                        SiNo
+                                            Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                            i <- i -1;
+                                        FinSi
+                                    FinSi
+                                FinSi
+                            FinSi
+                        FinPara
+                    SiNo
+                        Escribir "Capacidad maxima de 3 contactos completa";
+                    FinSi
+                2:
+                    Si contador <> 0 Entonces
+                        Escribir "Opcion escogida: 2. Buscar contactos almacenados ";
+                        Escribir "";
+                        si bandera1 = Verdadero Entonces
+                            Escribir "Contacto 1: ";
+                            Escribir "Nombre: ", nombreCompleto1;
+                            Escribir "Telefono: ", telefono1;
+                            Escribir "Organizacion: ", organizacion1;
+                            Escribir "";
+                        FinSi
+                        si bandera2 = Verdadero Entonces
+                            Escribir "Contacto 2: ";
+                            Escribir "Nombre: ", nombreCompleto2;
+                            Escribir "Telefono: ", telefono2;
+                            Escribir "Organizacion: ", organizacion2;
+                            Escribir "";
+                        FinSi
+                        si bandera3 = Verdadero Entonces
+                            Escribir "Contacto 3: ";
+                            Escribir "Nombre: ", nombreCompleto3;
+                            Escribir "Telefono: ", telefono3;
+                            Escribir "Organizacion: ", organizacion3;
+                            Escribir "";
+                        FinSi
+                        Escribir "";
+                    SiNo
+                        Escribir "Por el momento no tienes contactos registrados";
+                    FinSi
+                    
+                3: 
+                    Escribir "Opcion escogida: 3. Eliminar contacto ";
+                    Escribir "Escriba el contacto a eliminar";
+                    Leer opcionEliminar;
+                    si opcionEliminar = telefono1 Entonces
+                        Escribir "El contacto, con numero ", telefono1," ha sido eliminado satisfactoriamente";
+                        nombreCompleto1<-"";
+                        telefono1 <- 0;
+                        organizacion1 <- "";
+                        bandera1 <- Falso;
+                        contador <- contador - 1;
+                    SiNo
+                        si opcionEliminar = telefono2 Entonces
+                            Escribir "El contacto, con numero ", telefono2," ha sido eliminado satisfactoriamente";
+                            nombreCompleto2<-"";
+                            telefono2 <- 0;
+                            organizacion2 <- "";
+                            bandera2 <- Falso;
+                            contador <- contador - 1;
+                        SiNo
+                            si opcionEliminar = telefono3 Entonces
+                                Escribir "El contacto, con numero ", telefono3," ha sido eliminado satisfactoriamente";
+                                nombreCompleto3<-"";
+                                telefono3 <- 0;
+                                organizacion3 <- "";
+                                bandera3 <- Falso;
+                                contador <- contador - 1;
+                            SiNo
+                                Escribir "Telefono no fue encontrado en los contactos";
+                            FinSi	
+                        FinSi
+                    FinSi
+            FinSegun
+            Escribir "Elije una opción";
+            Escribir "1. Agregar contacto ";
+            Escribir "2. Buscar contactos almacenados";
+            Escribir "3. Eliminar contacto";
+            Escribir "0. Salir ";
+            Leer opcionElegida;
+            Limpiar Pantalla;
+        FinMientras
+        
+        Si opcionElegida = 0 Entonces
+            Escribir "Sistema finalizado";
+        FinSi
+    FinProceso
+    
+    </textarea>
+    <br />
+    <h2>Punto 7 Ciclos</h2>
+    <p>
+        El parqueadero "El guardián" presta sus servicios de parqueadero nocturno
+      para los usuarios del barrio y requiere una aplicación que permita
+      registrar los vehículos que se cuidan en estas instalaciones. Se sugiere
+      que el parqueadero tenga los atributos del vehículo como son, placa y
+      marca, y los datos del cliente como son nombre completo y número de
+      teléfono. Para cada vehículo se debe permitir la opción de ingresar al
+      parqueadero, retirar del parqueadero y consultar si un vehículo se
+      encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando
+      el usuario así lo indique. Tenga en presente que el parqueadero solo puede
+      almacenar máximo 5 vehículos.
+    </p>
+    <textarea name="texto" class="mensaje">
+        SubProceso respuesta <- captura(dato)
+        Definir respuesta Como Caracter;
+        Escribir "Ingresa ", dato;
+        Leer respuesta;
+    FinSubProceso
+    
+    
+    Proceso punto7
+        Definir placa1 Como Caracter;
+        Definir placa2 Como Caracter;
+        Definir placa3 Como Caracter;
+        Definir placa4 Como Caracter;
+        Definir placa5 Como Caracter;
+        Definir nombre1 Como Caracter;
+        Definir nombre2 Como Caracter;
+        Definir nombre3 Como Caracter;
+        Definir nombre4 Como Caracter;
+        Definir nombre5 Como Caracter;
+        Definir telefono1 Como Caracter;
+        Definir telefono2 Como Caracter;
+        Definir telefono3 Como Caracter;
+        Definir telefono4 Como Caracter;
+        Definir telefono5 Como Caracter;
+        Definir seguir,bandera1,bandera2, bandera3, bandera4, bandera5  Como Logico;
+        Definir opcion Como Entero;
+        Definir placa Como Caracter;
+        Definir nombre Como Caracter;
+        Definir telefono Como Caracter;
+        bandera1<-Falso;
+        bandera2<-Falso;
+        bandera3<-Falso;
+        bandera4<-Falso;
+        bandera5<-Falso;
+        placa1 <- '';
+        placa2 <- '';
+        placa3 <- '';
+        placa4 <- '';
+        placa5 <- '';
+        nombre1 <- '';
+        nombre2 <- '';
+        nombre3 <- '';
+        nombre4 <- '';
+        nombre5 <- '';
+        telefono1 <- '';
+        telefono2 <- '';
+        telefono3 <- '';
+        telefono4 <- '';
+        telefono5 <- '';
+        seguir <- Verdadero;
+        Mientras seguir Hacer
+            Escribir 'Seleccione una opcion';
+            Escribir '1. Ingresar Vehiculo';
+            Escribir '2. Retirar Vehiculo';
+            Escribir '3. Consultar Vehiculo';
+            Escribir '4. Salir';
+            Leer opcion;
+            Borrar Pantalla;
+            Segun opcion  Hacer
+                1:
+                    Si bandera1 = Falso o bandera2 = falso o bandera3 = Falso o bandera4 = Falso o bandera5 = Falso Entonces
+                        placa<-captura("placa del vehiculo a ingresar");
+                        Si placa1='' Entonces
+                            placa1 <- placa;
+                            bandera1<-Verdadero;
+                        SiNo
+                            Si placa2='' Entonces
+                                placa2 <- placa;
+                                bandera2<-Verdadero;
+                            SiNo
+                                Si placa3='' Entonces
+                                    placa3 <- placa;
+                                    bandera3<-Verdadero;
+                                SiNo
+                                    Si placa4='' Entonces
+                                        placa4 <- placa;
+                                        bandera4<-Verdadero;
+                                    SiNo
+                                        Si placa5='' Entonces
+                                            placa5 <- placa;
+                                            bandera5<-Verdadero;
+                                        FinSi
+                                    FinSi
+                                FinSi
+                            FinSi
+                        FinSi
+                        nombre<-captura("Nombre del propietario a ingresar");
+                        Si nombre1='' Entonces
+                            nombre1 <- nombre;
+                        SiNo
+                            Si nombre2='' Entonces
+                                nombre2 <- nombre;
+                            SiNo
+                                Si nombre3='' Entonces
+                                    nombre3 <- nombre;
+                                SiNo
+                                    Si nombre4='' Entonces
+                                        nombre4 <- nombre;
+                                    SiNo
+                                        Si nombre5='' Entonces
+                                            nombre5 <- nombre;
+                                        FinSi
+                                    FinSi
+                                FinSi
+                            FinSi
+                        FinSi
+                        telefono<-captura("Telefono del propietario a ingresar");
+                        Si telefono1='' Entonces
+                            telefono1 <- telefono;
+                        SiNo
+                            Si telefono2='' Entonces
+                                telefono2 <- telefono;
+                            SiNo
+                                Si telefono3='' Entonces
+                                    telefono3 <- telefono;
+                                SiNo
+                                    Si telefono4='' Entonces
+                                        telefono4 <- telefono;
+                                    SiNo
+                                        Si telefono5='' Entonces
+                                            telefono5 <- telefono;
+                                        FinSi
+                                    FinSi
+                                FinSi
+                            FinSi
+                        FinSi
+                    SiNo
+                        Escribir 'No se pueden ingresar Más Vehículos';
+                    FinSi
+                    
+                2:
+                    placa<-captura("placa del vehiculo a retirar");
+                    Si placa1=placa Entonces
+                        telefono1 <- '';
+                        nombre1 <- '';
+                        placa1 <- '';
+                        bandera1<-Falso;
+                    FinSi
+                    Si placa2=placa Entonces
+                        telefono2 <- '';
+                        nombre2 <- '';
+                        placa2 <- '';
+                        bandera2<-Falso;
+                    FinSi
+                    Si placa3=placa Entonces
+                        telefono3 <- '';
+                        nombre3 <- '';
+                        placa3 <- '';
+                        bandera3<-Falso;
+                    FinSi
+                    Si placa4=placa Entonces
+                        telefono4 <- '';
+                        nombre4 <- '';
+                        placa4 <- '';
+                        bandera4<-Falso;
+                    FinSi
+                    Si placa5=placa Entonces
+                        telefono5 <- '';
+                        nombre5 <- '';
+                        placa5 <- '';
+                        bandera5<-Falso;
+                    FinSi
+                3:
+                    placa<-captura("placa del vehiculo a consultar");
+                    Si placa1=placa Entonces
+                        Escribir nombre1;
+                        Escribir telefono1;
+                    FinSi
+                    Si placa2=placa Entonces
+                        Escribir nombre2;
+                        Escribir telefono2;
+                    FinSi
+                    Si placa3=placa Entonces
+                        Escribir nombre3;
+                        Escribir telefono3;
+                    FinSi
+                    Si placa4=placa Entonces
+                        Escribir nombre4;
+                        Escribir telefono4;
+                    FinSi
+                    Si placa5=placa Entonces
+                        Escribir nombre5;
+                        Escribir telefono5;
+                    FinSi
+                    Escribir 'Placa consultada no a ingresado';
+                4:
+                    Escribir 'Hasta luego';
+                    seguir <- Falso;
+            FinSegun
+        FinMientras
+    FinProceso
+    
+    </textarea>
+    <br />
+    <h2>Punto 8 Ciclos</h2>
+    <p>Realizar un programa el cual solicite su nombre y apellidos.</p>
+    <textarea name="texto" class="mensaje">
+    SubProceso respuesta1 <- captura1(dato)
+        Definir respuesta1 Como entero;
+        Escribir "Ingresar numero de documento de identidad del usuario numero ", dato;
+        Leer respuesta1;
+    FinSubProceso
+    
+    
+    Proceso Punto8
+        Definir documento, documento1, documento2, documento3, documento4, documento5, documento6, documento7, documento8, i Como Entero;
+        Definir estadoCurso, estadoCurso1, estadoCurso2, estadoCurso3, estadoCurso4, estadoCurso5, estadoCurso6, estadoCurso7, estadoCurso8 Como Caracter;
+        Definir opcionElegida, opcion2 Como Entero;
+        estadoCurso8 <- "";
+        Escribir "Elije una opción";
+        Escribir "1. Ingreso al curso ";
+        Escribir "2. Consultar usuarios que hayan presentado al curso";
+        Escribir "0. Salir ";
+        Leer opcionElegida;
+        Limpiar Pantalla;
+        Mientras opcionElegida <>	0 Hacer
+            Segun opcionElegida Hacer
+                1:
+                    si estadoCurso8 = "" Entonces
+                        Escribir "Opcion escogida: 1. Ingreso al curso ";
+                        Para i<-1 Hasta 8 Con Paso 1 Hacer
+                            documento<-captura1(i);
+                            Escribir "Ingresar estado del curso (aprobado) (no aprobado): ";
+                            Leer estadoCurso;
+                            Limpiar Pantalla;
+                            si i = 1 Entonces
+                                documento1<-documento;
+                                estadoCurso1 <- estadoCurso;
+                            SiNo
+                                si i = 2 Entonces
+                                    documento2<-documento;
+                                    estadoCurso2 <- estadoCurso;
+                                SiNo
+                                    si i = 3 Entonces
+                                        documento3<-documento;
+                                        estadoCurso3 <- estadoCurso;
+                                    SiNo
+                                        si i = 4 Entonces
+                                            documento4<-documento;
+                                            estadoCurso4 <- estadoCurso;
+                                        SiNo
+                                            si i = 5 Entonces
+                                                documento5<-documento;
+                                                estadoCurso5 <- estadoCurso;
+                                            SiNo
+                                                si i = 6 Entonces
+                                                    documento6<-documento;
+                                                    estadoCurso6 <- estadoCurso;
+                                                SiNo
+                                                    si i = 7 Entonces
+                                                        documento7<-documento;
+                                                        estadoCurso7 <- estadoCurso;
+                                                    SiNo
+                                                        si i = 8 Entonces
+                                                            documento8<-documento;
+                                                            estadoCurso8 <- estadoCurso;
+                                                        FinSi
+                                                    FinSi
+                                                FinSi
+                                            FinSi
+                                        FinSi
+                                    FinSi
+                                FinSi
+                            FinSi
+                        FinPara
+                    SiNo
+                        Escribir "Capacidad maxima de 8 usuarios completa";
+                    FinSi
+                2:
+                    Escribir "Opcion escogida: 2. Consultar usuarios que hayan presentado al curso ";
+                    Escribir "";
+                    Escribir "Usuario 1: ";
+                    Escribir "Numero de documento: ", documento1;
+                    Escribir "Resultado del curso: ", estadoCurso1;
+                    Escribir "";
+                    Escribir "Usuario 2: ";
+                    Escribir "Numero de documento: ", documento2;
+                    Escribir "Resultado del curso: ", estadoCurso2;
+                    Escribir "";
+                    Escribir "Usuario 3: ";
+                    Escribir "Numero de documento: ", documento3;
+                    Escribir "Resultado del curso: ", estadoCurso3;
+                    Escribir "";
+                    Escribir "Usuario 4: ";
+                    Escribir "Numero de documento: ", documento4;
+                    Escribir "Resultado del curso: ", estadoCurso4;
+                    Escribir "";
+                    Escribir "Usuario 5: ";
+                    Escribir "Numero de documento: ", documento5;
+                    Escribir "Resultado del curso: ", estadoCurso5;
+                    Escribir "";
+                    Escribir "Usuario 6: ";
+                    Escribir "Numero de documento: ", documento6;
+                    Escribir "Resultado del curso: ", estadoCurso6;
+                    Escribir "";
+                    Escribir "Usuario 7: ";
+                    Escribir "Numero de documento: ", documento7;
+                    Escribir "Resultado del curso: ", estadoCurso7;
+                    Escribir "";
+                    Escribir "Usuario 8: ";
+                    Escribir "Numero de documento: ", documento8;
+                    Escribir "Resultado del curso: ", estadoCurso8;
+                    Escribir "";
+                    Escribir "";
+            FinSegun
+            Escribir "Elije una opción";
+            Escribir "1. Ingreso al curso ";
+            Escribir "2. Consultar usuarios que hayan presentado al curso";
+            Escribir "0. Salir ";
+            Leer opcionElegida;
+            Limpiar Pantalla;
+        FinMientras
+        
+        Si opcionElegida = 0 Entonces
+            Escribir "Sistema finalizado";
+        FinSi
+    FinProceso
+    
+    </textarea>
+    <br />
+
+    <select id="slcOpciones">
+        <option value="1">Tema Morado</option>
+        <option value="2">Tema Azul</option>
+        <option value="3">Tema Verde</option>
+    </select>
+    <button id="boton1" onclick="ejecutar()">Aplicar Tema</button>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="./css/estilo.css" />
+    
+  </head>
+  <body class="estilo1" onload="validar()" >
+    <header>
+      <h1>Contáctenos</h1>
+    </header>
+    <div class="paquete">
+      <form
+        id="formulario"
+        class="formulario"
+        autocomplete="off"
+        name="formulario"
+      >
+        <ul>
+          <input
+            type="text"
+            name="texto"
+            placeholder="Ingresa Nombre"
+            id="nombre"
+            class="nombre"
+            name="nombre"
+          />
+          <input
+            type="email"
+            name="texto"
+            placeholder="Ingresa correo"
+            id="correo"
+            class="correo"
+            name="correo"
+          />
+          <input
+            type="text"
+            name="texto"
+            placeholder="Asunto"
+            id="asunto"
+            class="asunto"
+            name="asunto"
+          />
+          <label for="mensaje">Mensaje</label
+          ><br />
+          <textarea name="texto" class="mensaje" id="mensaje" name="mensaje"></textarea>
+        </ul>
+        <button type="submit" id="enviar" >Enviar</button>
+        <button type="reset" id="borrar" class="borrar">Borrar</button>
+        <p id="aviso" class="aviso"></p>
+      </form>
+    </div>
+  </body>
+  <script src="./js/contactenos.js"></script>
+</html>

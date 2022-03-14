@@ -1,0 +1,673 @@
+.estilo1 {
+  width: 1024px;
+  margin: auto;
+  text-align: center;
+  background-color: #c5a5c8;
+  font-family: cursive;
+}
+
+.estilo2 {
+  width: 1024px;
+  margin: auto;
+  text-align: center;
+  background-color: #56afc5;
+  font-family: cursive;
+}
+
+.estilo3 {
+  width: 1024px;
+  margin: auto;
+  text-align: center;
+  background-color: #a3dfcd;
+  font-family: cursive;
+}
+
+
+.estilo1-h1 {
+  font-style: normal;
+  color: black;
+  font-family:cursive;
+  
+}
+
+
+h3 {
+    font-style: normal;
+    color: black;
+    font-family:cursive;
+}
+
+
+p {
+  font-style: normal;
+  color: black;
+  font-family:cursive;
+}
+
+p.estilo1-box1 {
+  width: 150px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(68, 0, 85);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo2-box1 {
+  width: 150px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(27, 45, 211);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo3-box1 {
+  width: 150px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(5, 149, 82);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+
+p.estilo1-box2 {
+  width: 180px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(68, 0, 85);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  bottom: 20px;
+}
+
+p.estilo2-box2 {
+  width: 180px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(27, 45, 211);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+p.estilo3-box2 {
+  width: 180px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(5, 149, 82);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo1-box3 {
+  width: 180px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(68, 0, 85);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+p.estilo2-box3 {
+  width: 180px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(27, 45, 211);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+p.estilo3-box3 {
+  width: 180px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(5, 149, 82);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+
+
+
+
+p.estilo1-box4 {
+  width: 180px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(68, 0, 85);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+
+p.estilo2-box4 {
+  width: 180px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(27, 45, 211);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+p.estilo3-box4 {
+  width: 180px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(5, 149, 82);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+
+p.estilo1-box5 {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(68, 0, 85);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgb(68, 0, 85), 0px 0px 25px black;
+}
+
+
+p.estilo2-box5 {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(27, 45, 211);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgb(27, 45, 211), 0px 0px 25px black;
+}
+
+p.estilo3-box5 {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(5, 149, 82);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgb(11, 139, 43), 0px 0px 25px black;
+}
+
+p.estilo1-box6 {
+  width: 150px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(68, 0, 85);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo2-box6 {
+  width: 150px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(27, 45, 211);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo3-box6 {
+  width: 150px;
+  margin: 20px 20px;
+  padding: 10px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(5, 149, 82);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo1-box7 {
+  width: 150px;
+  margin: 20px 20px;
+  padding: 10px;
+  margin-top: 250px;
+  margin-left: 210px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(68, 0, 85);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo2-box7 {
+  width: 150px;
+  margin: 20px 20px;
+  padding: 10px;
+  margin-top: 250px;
+  margin-left: 210px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(27, 45, 211);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo3-box7 {
+  width: 150px;
+  margin: 20px 20px;
+  padding: 10px;
+  margin-top: 250px;
+  margin-left: 210px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(5, 149, 82);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo1-box8 {
+  width: 150px;
+  margin: 20px 20px;
+  padding: 10px;
+  margin-top: 250px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(68, 0, 85);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo2-box8 {
+  width: 150px;
+  margin: 20px 20px;
+  padding: 10px;
+  margin-top: 250px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(27, 45, 211);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo3-box8 {
+  width: 150px;
+  margin: 20px 20px;
+  padding: 10px;
+  margin-top: 250px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(5, 149, 82);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo1-box9 {
+  width: 250px;
+  margin: 20px 20px;
+  padding: 10px;
+  margin-top: 250px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(68, 0, 85);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo2-box9 {
+  width: 250px;
+  margin: 20px 20px;
+  padding: 10px;
+  margin-top: 250px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(27, 45, 211);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+p.estilo3-box9 {
+  width: 250px;
+  margin: 20px 20px;
+  padding: 10px;
+  margin-top: 250px;
+  font-size: normal;
+  font-family:cursive;
+  background-color: rgb(5, 149, 82);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  
+}
+
+nav {
+  display: flex;
+  
+}
+
+
+/*article {
+    width: auto;
+    margin: 10px auto;
+    border: solid 2px rgb(0, 0, 0);
+    font-family:cursive;  
+    border-radius: 50px;
+}
+*/
+
+em{
+    color: blueviolet;
+}
+span{
+    color: rgb(238, 108, 22);
+}
+
+
+/*sombras estilo1*/
+
+p.estilo1-box1:hover{
+    box-shadow: 0px 0px 20px rgb(68, 0, 85), 0px 0px 25px black;
+}
+p.estilo1-box2:hover{
+    box-shadow: 0px 0px 20px rgb(68, 0, 85), 0px 0px 25px black;
+}
+p.estilo1-box3:hover{
+    box-shadow: 0px 0px 20px rgb(68, 0, 85), 0px 0px 25px black;
+}
+p.estilo1-box4:hover{
+    box-shadow: 0px 0px 20px rgb(68, 0, 85), 0px 0px 25px black;
+}
+p.estilo1-box6:hover{
+  box-shadow: 0px 0px 20px rgb(68, 0, 85), 0px 0px 25px black;
+}
+p.estilo1-box7:hover{
+  box-shadow: 0px 0px 20px rgb(68, 0, 85), 0px 0px 25px black;
+}
+p.estilo1-box8:hover{
+  box-shadow: 0px 0px 20px rgb(68, 0, 85), 0px 0px 25px black;
+}
+p.estilo1-box9:hover{
+  box-shadow: 0px 0px 20px rgb(68, 0, 85), 0px 0px 25px black;
+}
+p.estilo1-box1:active{
+    box-shadow: 0px 0px 20px rgb(40, 142, 226), 0px 0px 25px black;
+}
+p.estilo1-box2:active{
+    box-shadow: 0px 0px 20px rgb(40, 142, 226), 0px 0px 25px black;
+}
+p.estilo1-box3:active{
+    box-shadow: 0px 0px 20px rgb(40, 142, 226), 0px 0px 25px black;
+}
+p.estilo1-box4:active{
+    box-shadow: 0px 0px 20px rgb(40, 142, 226), 0px 0px 25px black;
+}
+p.estilo1-box6:active{
+  box-shadow: 0px 0px 20px rgb(40, 142, 226), 0px 0px 25px black;
+}
+p.estilo1-box7:active{
+  box-shadow: 0px 0px 20px rgb(40, 142, 226), 0px 0px 25px black;
+}
+p.estilo1-box8:active{
+  box-shadow: 0px 0px 20px rgb(40, 142, 226), 0px 0px 25px black;
+}
+p.estilo1-box9:active{
+  box-shadow: 0px 0px 20px rgb(40, 142, 226), 0px 0px 25px black;
+}
+
+/*sombres estilo2*/
+
+p.estilo2-box1:hover{
+  box-shadow: 0px 0px 20px rgb(27, 45, 211), 0px 0px 25px black;
+}
+p.estilo2-box2:hover{
+  box-shadow: 0px 0px 20px rgb(27, 45, 211), 0px 0px 25px black;
+}
+p.estilo2-box3:hover{
+  box-shadow: 0px 0px 20px rgb(27, 45, 211), 0px 0px 25px black;
+}
+p.estilo2-box4:hover{
+  box-shadow: 0px 0px 20px rgb(27, 45, 211), 0px 0px 25px black;
+}
+p.estilo2-box6:hover{
+  box-shadow: 0px 0px 20px rgb(27, 45, 211), 0px 0px 25px black;
+}
+p.estilo2-box7:hover{
+  box-shadow: 0px 0px 20px rgb(27, 45, 211), 0px 0px 25px black;
+}
+p.estilo2-box8:hover{
+  box-shadow: 0px 0px 20px rgb(27, 45, 211), 0px 0px 25px black;
+}
+p.estilo2-box9:hover{
+  box-shadow: 0px 0px 20px rgb(27, 45, 211), 0px 0px 25px black;
+}
+p.estilo2-box1:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px rgb(161, 7, 149);
+}
+p.estilo2-box2:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px rgb(161, 7, 149);
+}
+p.estilo2-box3:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px rgb(161, 7, 149);
+}
+p.estilo2-box4:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px ;
+}
+p.estilo2-box6:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px ;
+}
+p.estilo2-box7:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px ;
+}
+p.estilo2-box8:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px ;
+}
+p.estilo2-box9:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px ;
+}
+/*sombra estilo3*/
+p.estilo3-box1:hover{
+  box-shadow: 0px 0px 20px rgb(5, 149, 82), 0px 0px 25px rgb(0, 0, 0);
+}
+p.estilo3-box2:hover{
+  box-shadow: 0px 0px 20px rgb(5, 149, 82), 0px 0px 25px rgb(0, 0, 0);
+}
+p.estilo3-box3:hover{
+  box-shadow: 0px 0px 20px rgb(5, 149, 82), 0px 0px 25px rgb(0, 0, 0);
+}
+p.estilo3-box4:hover{
+  box-shadow: 0px 0px 20px rgb(5, 149, 82), 0px 0px 25px rgb(0, 0, 0);
+}
+p.estilo3-box6:hover{
+  box-shadow: 0px 0px 20px rgb(5, 149, 82), 0px 0px 25px rgb(0, 0, 0);
+}
+p.estilo3-box7:hover{
+  box-shadow: 0px 0px 20px rgb(5, 149, 82), 0px 0px 25px rgb(0, 0, 0);
+}
+p.estilo3-box8:hover{
+  box-shadow: 0px 0px 20px rgb(5, 149, 82), 0px 0px 25px rgb(0, 0, 0);
+}
+p.estilo3-box9:hover{
+  box-shadow: 0px 0px 20px rgb(5, 149, 82), 0px 0px 25px rgb(0, 0, 0);
+}
+p.estilo3-box1:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px rgb(185, 130, 11);
+}
+p.estilo3-box2:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px rgb(185, 130, 11);
+}
+p.estilo3-box3:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px rgb(185, 130, 11);
+}
+p.estilo3-box4:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px rgb(185, 130, 11);
+}
+p.estilo3-box6:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px rgb(185, 130, 11);
+}
+p.estilo3-box7:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px rgb(185, 130, 11);
+}
+p.estilo3-box8:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px rgb(185, 130, 11);
+}
+p.estilo3-box9:active{
+  box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px rgb(185, 130, 11);
+}
+
+
+/*acordeon*/
+
+.estilo1-acordeon1 {
+	max-width: 400px;
+  background: #c5a5c8;
+	margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.estilo2-acordeon1 {
+	max-width: 400px;
+  background: #56afc5;
+	margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.estilo3-acordeon1 {
+	max-width: 400px;
+  background: #a3dfcd;
+	margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+
+.estilo1-encabezado {
+	width: auto;
+  margin: 10px auto;
+  border: solid 2px rgb(0, 0, 0);
+  font-family:cursive;  
+	cursor: pointer;
+	font-weight: 600;
+	padding: 1.5rem;
+  background: #c5a5c8;
+}
+
+.estilo2-encabezado {
+	width: auto;
+  margin: 10px auto;
+  border: solid 2px rgb(0, 0, 0);
+  font-family:cursive;  
+	cursor: pointer;
+	font-weight: 600;
+	padding: 1.5rem;
+  background: #56afc5;
+}
+
+.estilo3-encabezado {
+	width: auto;
+  margin: 10px auto;
+  border: solid 2px rgb(0, 0, 0);
+  font-family:cursive;  
+	cursor: pointer;
+	font-weight: 600;
+	padding: 1.5rem;
+  background: #a3dfcd;
+}
+
+.estilo1-encabezado:hover {
+	box-shadow: 0px 0px 20px rgb(68, 0, 85), 0px 0px 25px black;
+}
+.estilo1-encabezado:active{
+  box-shadow: 0px 0px 20px rgb(40, 142, 226), 0px 0px 25px black;
+}
+
+
+.estilo2-encabezado:hover {
+	box-shadow: 0px 0px 20px rgb(27, 45, 211), 0px 0px 25px black;
+}
+.estilo2-encabezado:active {
+	box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px rgb(161, 7, 149);
+}
+
+.estilo3-encabezado:hover {
+	box-shadow: 0px 0px 20px rgb(5, 149, 82), 0px 0px 25px rgb(0, 0, 0);
+}
+.estilo3-encabezado:active {
+	box-shadow: 0px 0px 20px rgb(236, 246, 253), 0px 0px 25px rgb(185, 130, 11);
+}
+
+
+.estilo1-contenido {
+	border-bottom: 1px solid #c5a5c8;
+	background: #c5a5c8;
+	padding: 1rem;
+	color: #000000;
+}
+
+.estilo1-contenido-cerrado {
+	display: none;
+}
+
+.estilo2-contenido {
+	border-bottom: 1px solid #56afc5;
+	background: #56afc5;
+	padding: 1rem;
+	color: #000000;
+}
+
+.estilo2-contenido-cerrado {
+	display: none;
+}
+
+.estilo3-contenido {
+	border-bottom: 1px solid #a3dfcd;
+	background: #a3dfcd;
+	padding: 1rem;
+	color: #000000;
+}
+
+.estilo3-contenido-cerrado {
+	display: none;
+}
+
+.mensaje{
+  width: 450px;
+  height: 200px;
+  margin: auto;
+}

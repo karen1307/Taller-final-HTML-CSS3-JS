@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseinttaller1</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/hojadevida.js"></script>
+  </head>
+  <body class="estilo1" onload="main()">
+    <a href="./pseint.html"
+      ><img
+        src="./imagenes/volver.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+
+    <header>
+      <h1 class="estilo1-h1"><b>PSeInt Taller 3</b></h1>
+    </header>
+
+    <a href="https://github.com/karen1307/tallerGit.git"
+      ><img
+        src="./imagenes/github.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+    <a href="https://youtu.be/MvcRr20bjbI"
+      ><img
+        src="./imagenes/youtube.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+
+    <h2>Punto 1</h2>
+    <p>Realizar la una figura por medio del ciclo Para</p>
+    <textarea name="texto" class="mensaje">
+    Proceso Punto1
+        Definir a Como Entero;
+        Definir w Como Entero;
+        Definir cadena1 Como Caracter;
+        
+        
+        
+        Para a<-1 Hasta 10 Con Paso 1 Hacer
+            cadena1<-"";
+            Para w<-1 Hasta a Con Paso 1 Hacer
+                
+                cadena1<-Concatenar(cadena1, "*");
+                
+            FinPara
+            Escribir cadena1;
+        FinPara
+        
+    FinProceso
+    
+    </textarea>
+    <br />
+
+    <h2>Punto 2</h2>
+    <p>Realizar la una figura por medio del ciclo mientras</p>
+    <textarea name="texto" class="mensaje">
+    Proceso Punto2
+        Definir a,b,c,n Como Entero;
+        Definir cadena1,cadena2 Como Caracter;
+        a <- 1;
+        b <- 10;
+        
+        Mientras a <= 10 Hacer
+            c <- 1;	
+            cadena1<-"";
+            cadena2<-"";
+            Mientras c < b Hacer
+                cadena2<-Concatenar(cadena2," ");
+                c <- c+1;
+            FinMientras
+            c<-1;
+            Mientras c <= a Hacer
+                cadena1<-Concatenar(cadena1, "*");
+                c <- c+1;
+            FinMientras
+            Escribir cadena2,cadena1;
+            a <- a + 1;
+            b <- b-1;
+    FinMientras
+        
+    
+        
+        
+    FinProceso
+    
+
+    </textarea>
+    <br />
+
+    <h2>Punto 3</h2>
+    <p>Realizar la una figura por medio del ciclo hasta que</p>
+    <textarea name="texto" class="mensaje">
+    Proceso Punto3
+        Definir cont,espa,contespa,i Como Entero;
+        Definir sig, tab Como Caracter;
+        cont <- 0;
+        sig <-" ";
+        espa<-12;
+        contespa<-1;
+        tab<-" ";
+        i<-1;
+        Repetir
+            Repetir
+                sig <- Concatenar(sig,"*");
+                cont <- cont+1;
+            Hasta Que cont = i
+            Repetir
+                tab<-Concatenar(tab," ");
+                contespa<-contespa+1;
+            Hasta Que contespa=espa
+            Escribir tab,sig;
+            cont <- cont - 1;
+            espa <- espa -1;
+            contespa<-0;
+            tab <-"";
+            i<-i+1;
+        Hasta Que i = 12
+        Escribir "            ***";
+        Escribir "            ***";
+        Escribir "           *****";
+        Escribir "          *******";
+        
+    FinProceso
+
+    </textarea>
+    <br />
+
+    <h2>Punto 4</h2>
+    <p>
+      Se requiere un programa que pueda crear la tabla de multiplicar del número
+      que el usuario indique por medio del ciclo Para; esta debe ser impresa del
+      1 al 10. Ejemplo, si el usuario indica que desea crear la tabla del 5,
+      entonces el resultado debería ser el siguiente:
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso Punto4
+        Definir c,n,a Como Entero;
+        
+        Escribir "ingres el numero de la tabla de multiplicar";
+        Leer n;
+        
+        Limpiar Pantalla;
+        
+        Para a<-1 Hasta 10 Con Paso 1 Hacer
+            c<-a*n;
+            Escribir a, " * ", n, " = ", c;
+        FinPara
+        
+        
+    FinProceso
+    
+    
+
+    </textarea>
+    <br />
+
+    <h2>Punto 5</h2>
+    <p>
+      Utilizando el ciclo que usted desee, crear un menú de ejecución infinita
+      hasta que el usuario desee terminar dicho ciclo.
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso Punto5
+        Definir nombre Como Caracter;
+        Definir opcion Como Entero;
+        Definir salir, capturar Como Logico;
+        capturar<-Falso;
+        salir<-Falso;
+        
+        Mientras salir = Falso Hacer
+    
+            Escribir "Elija una opcion";
+            Escribir "1. Capturar nombre";
+            Escribir "2. Saludar";
+            Escribir "3. Salir del sistema";
+            leer opcion;
+            Limpiar Pantalla;
+            Segun opcion Hacer
+            1:
+                Escribir "¿Cómo te llamas?";
+                Leer nombre;
+                capturar<-Verdadero;
+            2:
+                si capturar = Verdadero Entonces
+                    Escribir "hola ", nombre;
+                SiNo
+                    Escribir "para saludar debes primero capturar tu nombre";
+                FinSi
+            3:
+                Escribir "Hasta luego";
+                salir<-Verdadero;
+                
+            FinSegun
+        
+        FinMientras	
+       
+    FinProceso
+    </textarea>
+    <br />
+    <h2>Punto 6</h2>
+    <p>
+      Se está creando una aplicación que va a estar conectada con un prototipo
+      que permita almacenar contactos telefónicos en el dispositivo. Para ello
+      cada contacto debe contener nombre completo, teléfono y organización. Se
+      requiere que la aplicación permita añadir 3 contactos verificando que el
+      número no esté almacenado, buscar contactos almacenados y eliminar
+      contactos si el usuario lo requiere. Recuerde que el sistema debe terminar
+      cuando el usuario así lo indique.
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso Punto6
+        Definir telefono, telefono1, telefono2, telefono3, i, contador Como Entero;
+        Definir nombreCompleto, nombreCompleto1, nombreCompleto2, nombreCompleto3, organizacion, organizacion1, organizacion2, organizacion3 Como Caracter;
+        Definir opcionElegida, opcionEliminar Como Entero;
+        Definir bandera1, bandera2, bandera3 Como Logico;
+        
+        telefono1 <- 0;
+        telefono2 <- 0;
+        telefono3 <- 0;
+        contador <- 0;
+        nombreCompleto1 <- "";
+        nombreCompleto2 <- "";
+        nombreCompleto3 <- "";
+        organizacion1 <- "";
+        organizacion2 <- "";
+        organizacion3 <- "";
+        bandera1 <- Falso;
+        bandera2 <- Falso;
+        bandera3 <- Falso;
+        Escribir "Elije una opción";
+        Escribir "1. Agregar contacto ";
+        Escribir "2. Buscar contactos almacenados";
+        Escribir "3. Eliminar contacto";
+        Escribir "0. Salir ";
+        Leer opcionElegida;
+        Limpiar Pantalla;
+        Mientras opcionElegida <>	0 Hacer
+          Segun opcionElegida Hacer
+                1:
+                    si contador <= 3 Entonces
+                        Escribir "Opcion escogida: 1. Agregar contacto ";
+                        Para i<-1 Hasta 3 Con Paso 1 Hacer
+                            si bandera1 = Falso o bandera2 = Falso o bandera3 = Falso Entonces
+                                Escribir "Ingresar nombre completo del contacto numero: ";
+                                Leer nombreCompleto;
+                                Escribir "Ingresar Telefono del contacto: ";
+                                Leer telefono;
+                                Escribir "Ingresar organizacion del contacto: ";
+                                Leer organizacion;
+                            FinSi
+                            Limpiar Pantalla;
+                            
+                            si bandera1 = Falso Entonces
+                                si telefono <> telefono1 Entonces
+                                    si telefono <> telefono2 Entonces
+                                        si telefono <> telefono3 Entonces
+                                            nombreCompleto1<-nombreCompleto;
+                                            telefono1 <- telefono;
+                                            organizacion1 <- organizacion;
+                                            contador <- contador + 1;
+                                            bandera1 <- Verdadero;
+                                        SiNo
+                                            Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                            i <- i -1;
+                                        FinSi
+                                    SiNo
+                                        Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                        i <- i -1;
+                                    FinSi
+                                SiNo
+                                    Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                    i <- i -1;
+                                FinSi
+                            SiNo
+                                si bandera2 = Falso Entonces
+                                    si telefono <> telefono1 Entonces
+                                        si telefono <> telefono2 Entonces
+                                            si telefono <> telefono3 Entonces
+                                                nombreCompleto2<-nombreCompleto;
+                                                telefono2 <- telefono;
+                                                organizacion2 <- organizacion;
+                                                contador <- contador + 1;
+                                                bandera2 <- Verdadero;
+                                            SiNo
+                                                Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                                i <- i -1;
+                                            FinSi
+                                        SiNo
+                                            Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                            i <- i -1;
+                                        FinSi
+                                    SiNo
+                                        Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                        i <- i -1;
+                                    FinSi
+                                SiNo
+                                    si bandera3 = Falso Entonces
+                                        si telefono <> telefono1 Entonces
+                                            si telefono <> telefono2 Entonces
+                                                si telefono <> telefono3 Entonces
+                                                    nombreCompleto3<-nombreCompleto;
+                                                    telefono3 <- telefono;
+                                                    organizacion3 <- organizacion;
+                                                    contador <- contador + 1;
+                                                    bandera3 <- Verdadero;
+                                                SiNo
+                                                    Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                                    i <- i -1;
+                                                FinSi
+                                            SiNo
+                                                Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                                i <- i -1;
+                                            FinSi
+                                        SiNo
+                                            Escribir "El telefono ingresado ya se encuentra registrado, intenta de nuevo con un numero diferente";
+                                            i <- i -1;
+                                        FinSi
+                                    FinSi
+                                FinSi
+                            FinSi
+                        FinPara
+                    SiNo
+                        Escribir "Capacidad maxima de 3 contactos completa";
+                    FinSi
+                2:
+                    Si contador <> 0 Entonces
+                        Escribir "Opcion escogida: 2. Buscar contactos almacenados ";
+                        Escribir "";
+                        si bandera1 = Verdadero Entonces
+                            Escribir "Contacto 1: ";
+                            Escribir "Nombre: ", nombreCompleto1;
+                            Escribir "Telefono: ", telefono1;
+                            Escribir "Organizacion: ", organizacion1;
+                            Escribir "";
+                        FinSi
+                        si bandera2 = Verdadero Entonces
+                            Escribir "Contacto 2: ";
+                            Escribir "Nombre: ", nombreCompleto2;
+                            Escribir "Telefono: ", telefono2;
+                            Escribir "Organizacion: ", organizacion2;
+                            Escribir "";
+                        FinSi
+                        si bandera3 = Verdadero Entonces
+                            Escribir "Contacto 3: ";
+                            Escribir "Nombre: ", nombreCompleto3;
+                            Escribir "Telefono: ", telefono3;
+                            Escribir "Organizacion: ", organizacion3;
+                            Escribir "";
+                        FinSi
+                        Escribir "";
+                    SiNo
+                        Escribir "Por el momento no tienes contactos registrados";
+                    FinSi
+                    
+                3: 
+                    Escribir "Opcion escogida: 3. Eliminar contacto ";
+                    Escribir "Escriba el contacto a eliminar";
+                    Leer opcionEliminar;
+                    si opcionEliminar = telefono1 Entonces
+                        Escribir "El contacto, con numero ", telefono1," ha sido eliminado satisfactoriamente";
+                        nombreCompleto1<-"";
+                        telefono1 <- 0;
+                        organizacion1 <- "";
+                        bandera1 <- Falso;
+                        contador <- contador - 1;
+                    SiNo
+                        si opcionEliminar = telefono2 Entonces
+                            Escribir "El contacto, con numero ", telefono2," ha sido eliminado satisfactoriamente";
+                            nombreCompleto2<-"";
+                            telefono2 <- 0;
+                            organizacion2 <- "";
+                            bandera2 <- Falso;
+                            contador <- contador - 1;
+                        SiNo
+                            si opcionEliminar = telefono3 Entonces
+                                Escribir "El contacto, con numero ", telefono3," ha sido eliminado satisfactoriamente";
+                                nombreCompleto3<-"";
+                                telefono3 <- 0;
+                                organizacion3 <- "";
+                                bandera3 <- Falso;
+                                contador <- contador - 1;
+                            SiNo
+                                Escribir "Telefono no fue encontrado en los contactos";
+                            FinSi	
+                        FinSi
+                    FinSi
+            FinSegun
+            Escribir "Elije una opción";
+            Escribir "1. Agregar contacto ";
+            Escribir "2. Buscar contactos almacenados";
+            Escribir "3. Eliminar contacto";
+            Escribir "0. Salir ";
+            Leer opcionElegida;
+            Limpiar Pantalla;
+        FinMientras
+        
+        Si opcionElegida = 0 Entonces
+            Escribir "Sistema finalizado";
+        FinSi
+    FinProceso
+    </textarea>
+    <br />
+    <h2>Punto 7</h2>
+    <p>
+      El parqueadero "El guardián" presta sus servicios de parqueadero nocturno
+      para los usuarios del barrio y requiere una aplicación que permita
+      registrar los vehículos que se cuidan en estas instalaciones. Se sugiere
+      que el parqueadero tenga los atributos del vehículo como son, placa y
+      marca, y los datos del cliente como son nombre completo y número de
+      teléfono. Para cada vehículo se debe permitir la opción de ingresar al
+      parqueadero, retirar del parqueadero y consultar si un vehículo se
+      encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando
+      el usuario así lo indique. Tenga en presente que el parqueadero solo puede
+      almacenar máximo 5 vehículos.
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso punto7
+        Definir placa1 Como Caracter;
+        Definir placa2 Como Caracter;
+        Definir placa3 Como Caracter;
+        Definir placa4 Como Caracter;
+        Definir placa5 Como Caracter;
+        Definir nombre1 Como Caracter;
+        Definir nombre2 Como Caracter;
+        Definir nombre3 Como Caracter;
+        Definir nombre4 Como Caracter;
+        Definir nombre5 Como Caracter;
+        Definir telefono1 Como Caracter;
+        Definir telefono2 Como Caracter;
+        Definir telefono3 Como Caracter;
+        Definir telefono4 Como Caracter;
+        Definir telefono5 Como Caracter;
+        Definir seguir,bandera1,bandera2, bandera3, bandera4, bandera5  Como Logico;
+        Definir opcion Como Entero;
+        Definir placa Como Caracter;
+        Definir nombre Como Caracter;
+        Definir telefono Como Caracter;
+        bandera1<-Falso;
+        bandera2<-Falso;
+        bandera3<-Falso;
+        bandera4<-Falso;
+        bandera5<-Falso;
+        placa1 <- '';
+        placa2 <- '';
+        placa3 <- '';
+        placa4 <- '';
+        placa5 <- '';
+        nombre1 <- '';
+        nombre2 <- '';
+        nombre3 <- '';
+        nombre4 <- '';
+        nombre5 <- '';
+        telefono1 <- '';
+        telefono2 <- '';
+        telefono3 <- '';
+        telefono4 <- '';
+        telefono5 <- '';
+        seguir <- Verdadero;
+        Mientras seguir Hacer
+            Escribir 'Seleccione una opcion';
+            Escribir '1. Ingresar Vehiculo';
+            Escribir '2. Retirar Vehiculo';
+            Escribir '3. Consultar Vehiculo';
+            Escribir '4. Salir';
+            Leer opcion;
+            Borrar Pantalla;
+            Segun opcion  Hacer
+                1:
+                    Si bandera1 = Falso o bandera2 = falso o bandera3 = Falso o bandera4 = Falso o bandera5 = Falso Entonces
+                        Escribir 'Ingrese placa del vehiculo a ingresar';
+                        Leer placa;
+                        Si placa1='' Entonces
+                            placa1 <- placa;
+                            bandera1<-Verdadero;
+                        SiNo
+                            Si placa2='' Entonces
+                                placa2 <- placa;
+                                bandera2<-Verdadero;
+                            SiNo
+                                Si placa3='' Entonces
+                                    placa3 <- placa;
+                                    bandera3<-Verdadero;
+                                SiNo
+                                    Si placa4='' Entonces
+                                        placa4 <- placa;
+                                        bandera4<-Verdadero;
+                                    SiNo
+                                        Si placa5='' Entonces
+                                            placa5 <- placa;
+                                            bandera5<-Verdadero;
+                                        FinSi
+                                    FinSi
+                                FinSi
+                            FinSi
+                        FinSi
+                        Escribir 'Ingrese Nombre del propietario a ingresar';
+                        Leer nombre;
+                        Si nombre1='' Entonces
+                            nombre1 <- nombre;
+                        SiNo
+                            Si nombre2='' Entonces
+                                nombre2 <- nombre;
+                            SiNo
+                                Si nombre3='' Entonces
+                                    nombre3 <- nombre;
+                                SiNo
+                                    Si nombre4='' Entonces
+                                        nombre4 <- nombre;
+                                    SiNo
+                                        Si nombre5='' Entonces
+                                            nombre5 <- nombre;
+                                        FinSi
+                                    FinSi
+                                FinSi
+                            FinSi
+                        FinSi
+                        Escribir 'Ingrese Telefono del propietario a ingresar';
+                        Leer telefono;
+                        Si telefono1='' Entonces
+                            telefono1 <- telefono;
+                        SiNo
+                            Si telefono2='' Entonces
+                                telefono2 <- telefono;
+                            SiNo
+                                Si telefono3='' Entonces
+                                    telefono3 <- telefono;
+                                SiNo
+                                    Si telefono4='' Entonces
+                                        telefono4 <- telefono;
+                                    SiNo
+                                        Si telefono5='' Entonces
+                                            telefono5 <- telefono;
+                                        FinSi
+                                    FinSi
+                                FinSi
+                            FinSi
+                        FinSi
+                    SiNo
+                        Escribir 'No se pueden ingresar Más Vehículos';
+                    FinSi
+                    
+                2:
+                    Escribir 'Ingrese placa del vehiculo a retirar';
+                    Leer placa;
+                    Si placa1=placa Entonces
+                        telefono1 <- '';
+                        nombre1 <- '';
+                        placa1 <- '';
+                        bandera1<-Falso;
+                    FinSi
+                    Si placa2=placa Entonces
+                        telefono2 <- '';
+                        nombre2 <- '';
+                        placa2 <- '';
+                        bandera2<-Falso;
+                    FinSi
+                    Si placa3=placa Entonces
+                        telefono3 <- '';
+                        nombre3 <- '';
+                        placa3 <- '';
+                        bandera3<-Falso;
+                    FinSi
+                    Si placa4=placa Entonces
+                        telefono4 <- '';
+                        nombre4 <- '';
+                        placa4 <- '';
+                        bandera4<-Falso;
+                    FinSi
+                    Si placa5=placa Entonces
+                        telefono5 <- '';
+                        nombre5 <- '';
+                        placa5 <- '';
+                        bandera5<-Falso;
+                    FinSi
+                3:
+                    Escribir 'Ingrese placa del vehiculo a consultar';
+                    Leer placa;
+                    Si placa1=placa Entonces
+                        Escribir nombre1;
+                        Escribir telefono1;
+                    FinSi
+                    Si placa2=placa Entonces
+                        Escribir nombre2;
+                        Escribir telefono2;
+                    FinSi
+                    Si placa3=placa Entonces
+                        Escribir nombre3;
+                        Escribir telefono3;
+                    FinSi
+                    Si placa4=placa Entonces
+                        Escribir nombre4;
+                        Escribir telefono4;
+                    FinSi
+                    Si placa5=placa Entonces
+                        Escribir nombre5;
+                        Escribir telefono5;
+                    FinSi
+                    Escribir 'Placa consultada no a ingresado';
+                4:
+                    Escribir 'Hasta luego';
+                    seguir <- Falso;
+            FinSegun
+        FinMientras
+    FinProceso
+    
+    </textarea>
+    <br />
+    <h2>Punto 8</h2>
+    <p>
+      La escuela automovilística "El Maestro" requiere una aplicación que
+      permita registrar a sus clientes en los cursos de enseñanza
+      automovilística y establecer quienes lo han aprobado para continuar con el
+      trámite de adquirir la licencia de conducción. Para cada usuario se debe
+      permitir registrar su ingreso al curso, consultar usuarios que hayan
+      presentado el curso y resultados de la prueba del curso (si fueron
+      aprobados o no). Recuerde que el sistema debe terminar cuando el usuario
+      así lo indique. Tenga presente que la escuela tiene capacidad máxima de
+      gestionar 8 usuarios en su totalidad.
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso Punto8
+    Definir documento, documento1, documento2, documento3, documento4, documento5, documento6, documento7, documento8, i Como Entero;
+    Definir estadoCurso, estadoCurso1, estadoCurso2, estadoCurso3, estadoCurso4, estadoCurso5, estadoCurso6, estadoCurso7, estadoCurso8 Como Caracter;
+    Definir opcionElegida, opcion2 Como Entero;
+    estadoCurso8 <- "";
+    Escribir "Elije una opción";
+    Escribir "1. Ingreso al curso ";
+    Escribir "2. Consultar usuarios que hayan presentado al curso";
+    Escribir "0. Salir ";
+    Leer opcionElegida;
+    Limpiar Pantalla;
+    Mientras opcionElegida <>	0 Hacer
+         Segun opcionElegida Hacer
+            1:
+                si estadoCurso8 = "" Entonces
+                    Escribir "Opcion escogida: 1. Ingreso al curso ";
+                    Para i<-1 Hasta 8 Con Paso 1 Hacer
+                        Escribir "Ingresar numero de documento de identidad del usuario numero ", i, " : ";
+                        Leer documento;
+                        Escribir "Ingresar estado del curso (aprobado) (no aprobado): ";
+                        Leer estadoCurso;
+                        Limpiar Pantalla;
+                        si i = 1 Entonces
+                            documento1<-documento;
+                            estadoCurso1 <- estadoCurso;
+                        SiNo
+                            si i = 2 Entonces
+                                documento2<-documento;
+                                estadoCurso2 <- estadoCurso;
+                            SiNo
+                                 si i = 3 Entonces
+                                        documento3<-documento;
+                                        estadoCurso3 <- estadoCurso;
+                                    SiNo
+                                        si i = 4 Entonces
+                                            documento4<-documento;
+                                            estadoCurso4 <- estadoCurso;
+                                        SiNo
+                                            si i = 5 Entonces
+                                                documento5<-documento;
+                                                estadoCurso5 <- estadoCurso;
+                                            SiNo
+                                                si i = 6 Entonces
+                                                    documento6<-documento;
+                                                    estadoCurso6 <- estadoCurso;
+                                                SiNo
+                                                    si i = 7 Entonces
+                                                        documento7<-documento;
+                                                        estadoCurso7 <- estadoCurso;
+                                                    SiNo
+                                                        si i = 8 Entonces
+                                                            documento8<-documento;
+                                                            estadoCurso8 <- estadoCurso;
+                                                        FinSi
+                                                    FinSi
+                                                FinSi
+                                            FinSi
+                                        FinSi
+                                    FinSi
+                                FinSi
+                            FinSi
+                        FinPara
+                    SiNo
+                        Escribir "Capacidad maxima de 8 usuarios completa";
+                    FinSi
+                2:
+                    Escribir "Opcion escogida: 2. Consultar usuarios que hayan presentado al curso ";
+                    Escribir "";
+                    Escribir "Usuario 1: ";
+                    Escribir "Numero de documento: ", documento1;
+                    Escribir "Resultado del curso: ", estadoCurso1;
+                    Escribir "";
+                    Escribir "Usuario 2: ";
+                    Escribir "Numero de documento: ", documento2;
+                    Escribir "Resultado del curso: ", estadoCurso2;
+                    Escribir "";
+                    Escribir "Usuario 3: ";
+                    Escribir "Numero de documento: ", documento3;
+                    Escribir "Resultado del curso: ", estadoCurso3;
+                    Escribir "";
+                    Escribir "Usuario 4: ";
+                    Escribir "Numero de documento: ", documento4;
+                    Escribir "Resultado del curso: ", estadoCurso4;
+                    Escribir "";
+                    Escribir "Usuario 5: ";
+                    Escribir "Numero de documento: ", documento5;
+                    Escribir "Resultado del curso: ", estadoCurso5;
+                    Escribir "";
+                    Escribir "Usuario 6: ";
+                    Escribir "Numero de documento: ", documento6;
+                    Escribir "Resultado del curso: ", estadoCurso6;
+                    Escribir "";
+                    Escribir "Usuario 7: ";
+                    Escribir "Numero de documento: ", documento7;
+                    Escribir "Resultado del curso: ", estadoCurso7;
+                    Escribir "";
+                    Escribir "Usuario 8: ";
+                    Escribir "Numero de documento: ", documento8;
+                    Escribir "Resultado del curso: ", estadoCurso8;
+                    Escribir "";
+                    Escribir "";
+            FinSegun
+            Escribir "Elije una opción";
+            Escribir "1. Ingreso al curso ";
+            Escribir "2. Consultar usuarios que hayan presentado al curso";
+            Escribir "0. Salir ";
+            Leer opcionElegida;
+            Limpiar Pantalla;
+        FinMientras
+        
+        Si opcionElegida = 0 Entonces
+            Escribir "Sistema finalizado";
+        FinSi
+    FinProceso
+    
+    
+    </textarea>
+    <br />
+  </body>
+  <select id="slcOpciones">
+    <option value="1">Tema Morado</option>
+    <option value="2">Tema Azul</option>
+    <option value="3">Tema Verde</option>
+</select>
+<button id="boton1" onclick="ejecutar()">Aplicar Tema</button>
+</main>
+</html>

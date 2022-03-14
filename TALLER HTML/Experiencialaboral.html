@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="./js/hojadevida.js"></script>
+  </head>
+  <body class="estilo1" onload="main()">
+    <a href="index.html"
+      ><img
+        src="imagenes/volver.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+    <h1><b>Experiencia Laboral</b></h1>
+
+    <div id="part1" class="estilo1-acordeon1">
+      <div onclick="acordeon1()" id="encabezado1" class="estilo1-encabezado">
+        <p>
+          <em><b>EMTELCO CX & BPO |Asesora de servicio al cliente</b></em>
+        </p>
+      </div>
+      <div id="ref1" class="estilo1-contenido">
+        <span>2015 - 2016</span>
+        <br />
+        <p>
+          Promocionar los servicios para el hogar de Une y atención al cliente.
+        </p>
+      </div>
+      <div onclick="acordeon2()" id="encabezado2" class="estilo1-encabezado">
+        <p>
+          <em><b>Zafit S.A.S | Vendedora</b></em>
+        </p>
+      </div>
+      <div id="ref2" class="estilo1-contenido">
+        <span>Temporadas</span>
+        <br />
+        <p>
+          Vender pantuflas de descanso en temporadas navideñas y días especiales
+          del año.
+        </p>
+      </div>
+      <div onclick="acordeon3()" id="encabezado3" class="estilo1-encabezado">
+        <p>
+          <em><b>Bancolombia</b></em>
+        </p>
+      </div>
+      <div id="ref3" class="estilo1-contenido">
+        <span>2019 - 2020</span>
+        <br />
+        <p>Programador Junior</p>
+      </div>
+      <div onclick="acordeon4()" id="encabezado4" class="estilo1-encabezado">
+        <p>
+          <em><b>EMTELCO CX & BPO |Creador de Experiencia Senior</b></em>
+        </p>
+      </div>
+      <div id="ref4" class="estilo1-contenido">
+        <span>2021 - Actual Mente</span>
+        <br />
+        <p>Atención al cliente área de financiera Comfama.</p>
+      </div>
+    </div>
+    <a href="download/HV Karen Fonseca.pdf"> Descargar hoja de vida</a>
+    <select id="slcOpciones">
+        <option value="1">Tema Morado</option>
+        <option value="2">Tema Azul</option>
+        <option value="3">Tema Verde</option>
+    </select>
+    <button id="boton1" onclick="ejecutar2()">Aplicar Tema</button>
+  </body>
+</html>

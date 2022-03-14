@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/hojadevida.js"></script>
+  </head>
+
+  <body class="estilo1" onload="main1()">
+    <a href="./index.html"
+      ><img
+        src="./imagenes/volver.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+    <h1><b>Referencias Familiares</b></h1>
+    <div id="part1" class="estilo1-acordeon1">
+      <div onclick="acordeon1()"  id="encabezado1" class="estilo1-encabezado">
+        <p>
+          <em><b>Patricia Moreno Triana</b></em>
+        </p>
+      </div>
+      <div id="ref1"  class="estilo1-contenido">
+        <p><span>Administradora</span></p>
+        <p>Teléfono: 3128331566</p>
+      </div> <div onclick="acordeon2()" id="encabezado2" class="estilo1-encabezado">
+        <p>
+          <em><b>Yolanda Moreno Triana</b></em>
+        </p>
+      </div>
+      <div id="ref2"  class="estilo1-contenido">
+        <p><span>Independiente</span></p>
+        <p>Teléfono: 3144925787</p>
+      </div> <div onclick="acordeon3()" id="encabezado3" class="estilo1-encabezado">
+        <p>
+          <em><b>Ivan Andres Tamayo Monsalve</b></em>
+        </p>
+      </div>
+      <div id="ref3"  class="estilo1-contenido">
+        <p><span>Associate Consultant</span></p>
+        <p>Teléfono: 3016992918</p>
+      </div>
+    </div>
+    <a href="download/HV Karen Fonseca.pdf"> Descargar hoja de vida</a>
+
+    <select id="slcOpciones">
+      <option value="1">Tema Morado</option>
+      <option value="2">Tema Azul</option>
+      <option value="3">Tema Verde</option>
+  </select>
+  <button id="boton1" onclick="ejecutar1()">Aplicar Tema</button>
+
+  </body>
+</html>

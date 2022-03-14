@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseinttaller1</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/hojadevida.js"></script>
+  </head>
+  <body class="estilo1" onload="main()">
+    <a href="./pseint.html"
+      ><img
+        src="./imagenes/volver.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+
+    <header>
+      <h1 class="estilo1-h1"><b>PSeInt Taller 1</b></h1>
+    </header>
+
+    <a href="https://github.com/karen1307/tallerGit.git"
+      ><img
+        src="./imagenes/github.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+    <a href="https://youtu.be/ky64Ahff2Jk"
+      ><img
+        src="./imagenes/youtube.png"
+        width="50"
+        height="50"
+        alt="volver pagina anterior"
+    /></a>
+
+    <h2>Punto 1</h2>
+    <p>Realizar un programa el cual solicite su nombre y apellidos.</p>
+    <textarea name="texto" class="mensaje">
+    Proceso TallerPuntoUno
+	
+        Definir nombre Como Caracter;
+        Definir apellido Como Caracter;
+        
+        Escribir "¿Cúal es tu Nombre?";
+        Leer nombre;
+        
+        Escribir "¿Cúal es tu Apellido?";
+        Leer apellido;
+        
+    FinProceso
+    </textarea>
+    <br />
+
+    <h2>Punto 2</h2>
+    <p>
+      Realizar un programa el cual solicite su nombre, apellidos, edad y
+      estatura.
+    </p>
+    <textarea name="texto" class="mensaje">
+Proceso TallerPuntoDos
+	
+	Definir nombre Como Caracter;
+	Definir apellido Como Caracter;
+	Definir edad Como Entero;
+	Definir estatura Como Real;
+	
+	Escribir "¿Cúal es tu Nombre?";
+	Leer nombre;
+	
+	Escribir "¿Cúal es tu Apellido?";
+	Leer apellido;
+	
+	Escribir "¿Qué edad tienes?";
+	Leer edad;
+	
+	Escribir "¿Cúal es tu estatura en metros?";
+	Leer estatura;
+	
+FinProceso
+    </textarea>
+    <br />
+
+    <h2>Punto 3</h2>
+    <p>
+      Realizar un programa el cual solicite su nombre y apellidos, también debe
+      capturar nombre y apellidos de su padre y madre. Al finalizar debe
+      imprimir en pantalla el siguiente mensaje "Yo [Nombre Completo], soy hijo
+      de [Nombre de la Madre] y [Nombre del Padre].
+    </p>
+    <textarea name="texto" class="mensaje">
+Proceso TallerPuntoTres
+	
+	Definir nombre Como Caracter;
+	Definir nombremadre Como Caracter;
+	Definir nombrepadre Como Caracter;
+	Definir apellido Como Caracter;
+	Definir apellidomadre Como Caracter;
+	Definir apellidopadre Como Caracter;
+	
+	
+	Escribir "¿Cúal es tu Nombre?";
+	Leer nombre;
+	
+	Escribir "¿Cúal es tu Apellido?";
+	Leer apellido;
+	
+	Escribir "¿Cúal es el Nombre de tu madre?";
+	Leer nombremadre;
+	
+	Escribir "¿Cúal es el Apellido de tu madre?";
+	Leer apellidomadre;
+	
+	Escribir "¿Cúal es el Nombre de tu padre?";
+	Leer nombrepadre;
+	
+	Escribir "¿Cúal es es Apellido de tu padre?";
+	Leer apellidopadre;
+	
+	Limpiar Pantalla;
+	
+	Escribir "Yo ",  nombre, " ", apellido;
+	Escribir "Soy hijo de " , nombremadre ," " ,
+        apellidomadre;
+	Escribir "y " ,  nombrepadre, " " ,apellidopadre;
+	
+	
+FinProceso
+
+    </textarea>
+    <br />
+
+    <h2>Punto 4</h2>
+    <p>
+      Realizar un programa el cual solicite el nombre de una ciudad capital y el
+      país. Al finalizar debe imprimir en pantalla el siguiente mensaje "La
+      ciudad [Nombre de la Ciudad], es la capital del país [Nombre del País]
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso TallerPuntoCuatro
+	
+        Definir nombreciudad Como Caracter;
+        Definir  capital Como Caracter;
+        
+        Escribir "Ingresa el nombre de una ciudad capital";
+        Leer nombreciudad;
+        
+        Escribir "ingresa el pais de la ciudad Capital";
+        Leer capital;
+        
+        Limpiar Pantalla;
+        
+        Escribir "La ciudad ", nombreciudad;
+        Escribir "es la capital del país ", capital;
+        
+    FinProceso
+    
+
+    </textarea>
+    <br />
+
+    <h2>Punto 5</h2>
+    <p>
+      Realizar un programa el cual solicite el nombre de su mascota, edad de la
+      mascota, el tipo de mascota y su nombre completo. Al finalizar el sistema
+      debe e imprimir en pantalla el siguiente mensaje: [Nombre de Mascota] es
+      un(a) [Tipo de Mascota], el cual, tiene [Edad de la Mascota] años de edad
+      y [Nombre Completo] es actualmente su dueño(a).
+    </p>
+    <textarea name="texto" class="mensaje">
+    Proceso TallerPuntoCinco
+	
+        Definir nombremascota Como Caracter;
+        Definir tipodemascota Como Caracter;
+        Definir edadmascota Como Entero;
+        Definir nombrecompleto Como Caracter;
+        
+        Escribir "¿Cúal es el nombre de tu mascota?";
+        Leer nombremascota;
+        
+        Escribir "¿Cuantos años tiene tu mascota?";
+        Leer edadmascota;
+        
+        Escribir "¿Que tipo de mascota tienes?";
+        Leer tipodemascota;
+        
+        Escribir "¿Cúal es tu nombre completo";
+        Leer nombrecompleto;
+        
+        Limpiar Pantalla;
+        
+        Escribir nombremascota, " es un(a) ", tipodemascota;
+        Escribir "el cual, tiene ", edadmascota, " años de edad";
+        Escribir " y ", nombrecompleto, " es actualmente su dueño(a)";
+        
+        
+    FinProceso
+    </textarea>
+    <br />
+    <select id="slcOpciones">
+      <option value="1">Tema Morado</option>
+      <option value="2">Tema Azul</option>
+      <option value="3">Tema Verde</option>
+  </select>
+  <button id="boton1" onclick="ejecutar()">Aplicar Tema</button>
+  </main>
+  </body>
+</html>

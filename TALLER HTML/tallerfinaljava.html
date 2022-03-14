@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseinttaller1</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/hojadevida.js"></script>
+</head>
+
+<body class="estilo1" onload="main()">
+    <a href="./Java.html"><img src="./imagenes/volver.png" width="50" height="50" alt="volver pagina anterior" /></a>
+
+    <header>
+        <h1 class="estilo1-h1"><b>Taller final Java</b></h1>
+    </header>
+
+    <a href=<!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>pseinttaller1</title>
+            <link rel="stylesheet" href="./css/estilos.css" />
+            <script src="./js/hojadevida.js"></script>
+        </head>
+
+        <body class="estilo1" onload="main()">
+
+            <a href="https://github.com/karen1307/Taller-final-de-Java.git"><img src="./imagenes/github.png" width="50"
+                    height="50" alt="volver pagina anterior" /></a>
+
+
+            <h2>Main</h2>
+            <p>
+                Apreciado aprendiz, ahora usted deberá crear el siguiente programa en Java usando todo el conocimiento
+                que se tiene hasta el momento:<br>
+                Realizar una calculadora en Java a nivel de programa de consola, donde deberá cumplir con los siguientes
+                ítems:<br>
+                La calculadora deberá soportar cualquier cantidad de números tanto positivos como negativos, incluyendo
+                su parte decimal.<br>
+                Las operaciones que debe realizar dicha calculadora son: Sumar, Restar, Multiplicar, Dividir y Módulo de
+                la división.<br>
+                Se debe validar el no poder dividir por cero ya que este tipo de operación no existe.<br>
+                El código debe estar documentado.
+            </p>
+            <textarea name="texto" class="mensaje">
+        package com.sofka;
+
+import java.util.Scanner;
+
+public class Main {
+
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        boolean calculadora = true; //variable para generar bucle en el while
+        boolean validacionDivision; //se guarda el estado que devuelve la funcion de validar la division por 0.
+        Operaciones operaciones = new Operaciones(); //Inicialización de objeto.
+        float resultado; //se guarda resultado de las operaciones
+        System.out.println("Ingrese + para sumar, - para restar / para dividir , * para multiplicar, % para hayar el modulo de la division");
+        System.out.println("Para salir, ingrese (s) en el operador");
+        System.out.println("Si ingresas numeros decimales, separar los decimales con una ,");
+        System.out.print("Ingrese un numero y oprima enter: ");
+        resultado = sc.nextFloat();
+        while(calculadora){
+            System.out.print("Ingrese un operador (+ para sumar, - para restar / para dividir , * para multiplicar, % para modulo, s para salir) y oprima enter: ");
+            String operador = sc.next();
+            if (operador.equals("s")){ //condición para seguir operando, si es igual a s, se sale de la calculadora
+                System.out.println("Saliendo de la calculadora...");
+                break; //romper ciclo
+            }
+            System.out.print("Ingrese un numero y oprima enter: ");
+            float numero2 = sc.nextFloat();
+            resultado = operaciones.menu(operador, resultado, numero2); //guardamos el resultado obtenido por la operacion, mandamos las variables ingresadas para validar que operacion realizar
+            validacionDivision = operaciones.validarResultado(Float.toString(resultado)); //se guarda el estado que devuelve la funcion de validar la division por 0.
+            if (validacionDivision){ //si es verdadero el estado, es que no han dividido por 0
+                System.out.println("resultado: " + resultado);
+            } else { //si se divide por 0, nos da como respuesta "Infinity", con esto mandamos false para saber que se dividio por 0
+                System.out.println("No se puede dividir por 0");
+                System.out.print("Ingrese un numero y oprima enter: ");
+                resultado = sc.nextFloat(); //pedimos nuevamente el primer numero puesto que se dividio por 0.
+            }
+        }
+
+
+    }
+}
+    </textarea>
+            <br />
+
+            <select id="slcOpciones">
+                <option value="1">Tema Morado</option>
+                <option value="2">Tema Azul</option>
+                <option value="3">Tema Verde</option>
+            </select>
+            <button id="boton1" onclick="ejecutar()">Aplicar Tema</button>
+            </main>
+        </body>
+
+        </html>
